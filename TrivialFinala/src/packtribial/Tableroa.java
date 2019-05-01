@@ -20,7 +20,7 @@ public class Tableroa {
 	private int			zutabeKop=0;
 	private Laukia[]	bigarrenBidea;// Kanpoko bidea, zirkulu bat
 	private	int			posizioZirkuluan=0; 		
-	private static Tableroa nireTableroa;
+	private static Tableroa nireTableroa=null;
 
 	//eraikitazilea
 	private Tableroa() {
@@ -103,12 +103,12 @@ public class Tableroa {
 			
 			else{
 				
-				while (kont <= pAteratakoa && hasierakoPasilloan){
+				while (kont < pAteratakoa && hasierakoPasilloan){
 				
 					kont++;
 					egungoZutabea++;
 					if( this.lehenengoBidea[egungoErrenkada][egungoZutabea] instanceof LaukiGaztaduna){
-					
+						
 						hasierakoPasilloan	= false;
 						//downcasting-a erabiliz
 						egungoZutabea		= 
@@ -117,7 +117,6 @@ public class Tableroa {
 				}
 				
 				if (kont < pAteratakoa){ //zirkulura pasatu da eta oraindik mugitu behar da
-					
 					int zenbatMugitu	= pAteratakoa - kont;
 					egungoZutabea		= this.mugituZirkuluan(egungoZutabea,zenbatMugitu);
 					
@@ -159,44 +158,34 @@ public class Tableroa {
 		Teklatua	teklatuHau	= Teklatua.getTeklatua();
 		String noraMugitu 		= teklatuHau.noraMugitu("Nora mugitu nahi duzu fitxa? (aurrera/atzera)");
 		//Salbuespena gertatuko da kasu honetan****************************************************
-		
 		int	posizioBerria	= pEgungoPosizioa;
-		
-		if (noraMugitu == "aurrera"){
+		switch (noraMugitu){
+		case "aurrera":
 			
 			posizioBerria	= posizioBerria + pZenbatMugitu;
 			if (posizioBerria > 41){
 				
 				posizioBerria	= posizioBerria - 42; //Zerotik hasi behar delako zenbaketa "ken 42 egiten da"
 			}
-		}
+			break;
+		
+		
+		case "atzera":
 			
-		else if (noraMugitu == "atzera"){
-				
 			posizioBerria	= posizioBerria - pZenbatMugitu;
 			if(posizioBerria < 0){
 					
 				posizioBerria	= posizioBerria	+ 42; //Zeroa kontuan hartzeko "gehi 42 egiten da"
 			}
+			break;
 		}
 			
 			
 		return posizioBerria;
 	}
 	
-
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		public void setErrenkadaKop(int pErrenkadaKop){
+		/*public void setErrenkadaKop(int pErrenkadaKop){
 	        this.errenkadaKop=pErrenkadaKop;
 	    }
 	    public void setZutabeKop(int pZutabeKop){
@@ -204,18 +193,19 @@ public class Tableroa {
 	    }
 	    public void setPosizioZirkuluan(int pPosizioZirkuluan){
 	        this.posizioZirkuluan=pPosizioZirkuluan;
-	    }
-	    public void gehituHasieranLaukia(Laukia pLaukia) {
+	    }*/
+	
+	    private void gehituHasieranLaukia(Laukia pLaukia) {
 	        //Salbuespen if jokalari kop 6 edo 2
 	        this.lehenengoBidea[this.errenkadaKop][this.zutabeKop]=pLaukia;
-	        if(this.zutabeKop==7){
+	        if(this.zutabeKop==6){
 	        	this.errenkadaKop++;
 	        	this.zutabeKop=0;
 	        }
 	        else{
 	        this.zutabeKop++;}//TODO
 	    }
-	    public void gehituZirkuluanLaukia(Laukia pLaukia) {
+	    private void gehituZirkuluanLaukia(Laukia pLaukia) {
 	        //Salbuespen if jokalari kop 6 edo 2
 	        this.bigarrenBidea[this.posizioZirkuluan]=pLaukia;
 	        this.posizioZirkuluan++;//TODO
@@ -223,7 +213,7 @@ public class Tableroa {
 	    public void tableroaHasieratu(){
 	    	//LaukiGaztaduna(String pKolorea, int pErrenkada, int pZutabeaZirkuluan){
 	    	int kont = 0;
-	    	String[] zatiak=null;
+	    	String[] zatiak=new String[3];
 	    	String koloreaGaztatxo=null;
 	    	String errenkada=null;
 	    	String zutabeaZirkulua=null;

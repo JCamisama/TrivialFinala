@@ -71,7 +71,7 @@ public class ListaJokalariak {
 
 		int kont=0;
 		Jokalaria jokalariBat=null;
-		String[] zatiak=null;
+		String[] zatiak=new String[4];
 		InputStream fitx=null;
 		InputStreamReader in=null;
 		Scanner sc = null;
