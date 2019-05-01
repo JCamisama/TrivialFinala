@@ -16,26 +16,28 @@ public class ListaGaztatxoak {
 		
 		// Metodo hau pantailan galderen erantzunaren emaitzak inprimatzeko aukera daukagu!!!
 
-        if(!this.badago(pGaztatxoa)){
+        if(!this.badago(pGaztatxoa) && pGaztatxoa!="zuzena" && pGaztatxoa!="okerra"){
 
             this.lista.add(pGaztatxoa);
-            System.out.println("Gazta "+pGaztatxoa+" lortu duzu, zorionak!");
+            System.out.println("Gazta "+pGaztatxoa+" lortu duzu, zorionak! \n");
         }
 
         else if(pGaztatxoa == "zuzena"){
         	
-        	System.out.println("Ondo erantzun duzu galdera, baina ez duzu gazta berririk lortu.");
+        	System.out.println("Ondo erantzun duzu galdera, baina ez duzu gazta berririk lortu. \n");
         		
         }
         
         else if(pGaztatxoa == "okerra"){
         	
-        	System.out.println("Txarto erantzun duzu galdera!");	
+        	System.out.println("Txarto erantzun duzu galdera! \n");
+        	
         }
         
         else{
 
-            System.out.print("Gaztaxo "+ pGaztatxoa + " jadanik lortu duzu!");
+            System.out.print("Gaztaxo "+ pGaztatxoa + " jadanik lortu duzu! \n");
+            
         }
     }
 
