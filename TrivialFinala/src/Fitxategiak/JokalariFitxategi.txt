@@ -1,0 +1,6 @@
+berdea#0#0#true
+morea#1#0#true
+urdina#2#0#true
+gorria#3#0#true
+horia#4#0#true
+laranja#5#0#true

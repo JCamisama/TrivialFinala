@@ -1,0 +1,20 @@
+Zein da lurraren lekurik sakonena? # 1) Mponeng # 2) Marianen fosa # 3) Bentley fosa # 4) Baikal lakua#2
+Zein da Marokoko hiriburua? # 1) Rabat # 2) Eritrea # 3) Tripoli # 4) Arpel#1
+Zein herrialdetan aurkitzen da Po ibaia? # 1) Ingalaterra # 2) Alemania # 3) Italia # 4) Austria#3
+Zein da munduko herrialderik bisitatuena? # 1) Frantzia # 2) Italia # 3) Espainia # 4) Estatu Batuak#2
+Zein herrialdetan quechua da hizkuntza ofiziala? # 1) Uruguay Txile eta Argentina # 2) Peru, Bolivia eta Paraguay # 3) Venezuela, Guayana Frantsesa eta Andorra # 4) Peru, Ecuador eta Bolivia#4
+Zein herrialdetan aurkitzen da Ycatan penintsula? # 1) Mexiko # 2) Brasil # 3) Txile # 4) Peru#1
+Ze ozeanotan dago Sri Lanka? # 1) Atlantikoa # 2) Pazifikoa # 3) Indikoa # 4) Txinatarra#3
+Zein da munduko mendirik altuena? # 1) Ebroa # 2) Himalaya # 3) Aconcagua # 4) Everest#4
+Ze izen dauka cowboy argentinar batek? # 1) Gaucho # 2) Pive # 3) Payo # 4) Cowboy#1
+Zein bi herrialderi dagokio vudaren existentzia? # 1) Afrika eta Asia # 2) Europa eta Asia # 3) Afirka eta Amerika # 4) Amerika eta Europa#3
+Ze ibai pasatzen da Aragoitik? # 1) Ebro # 2) Tamesis # 3) Everest # 4) Tajo#1
+Zenbat laku handi daude Estatu Batuetan? # 1) Zero # 2) Hiru # 3) Bost # 4) Sei#3
+Zein da munduko herrialderik jendetsuena? # 1) India # 2) Vaticano # 3) Estatu Batuak # 4) Txina#4
+Zein da munduko deserturik handiena? # 1) Sahara # 2) Arabiarra # 3) Gobi # 4) Antartika#4
+Hauetako zein hiri ez dago Europan? # 1) Omsk # 2) Santiago # 3) Melbourne # 4) Aurreko guztiak ondo daude#4
+Zenbat herrialde osatzen dute Erresuma Batua? # 1) Lau # 2) Bost # 3) Sei # 4) Hiru#1
+Hauetako zein herrialdek ez du Frantziarekin limiterik? # 1) Holanda # 2) Italia # 3) Espana # 4) Alemania#1
+Zein da munduko ibairik luzeena? # 1) Ibai Horia # 2) Congo # 3) Nilo # 4) Amazonas#4
+Zein da munduko herririk txikiena? # 1) Tuvalu # 2) Vaticano # 3) Maldivak # 4) Monaco#2
+Zein ibai ez da existitzen? # 1) Ibai gorria # 2) Ibai berdea # 3) Ibai horia # 4) Ibai morea#4

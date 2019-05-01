@@ -1,0 +1,20 @@
+Ze gaixotazun afektazten du gibela? # 1) Hepatitisa # 2) Diabatesa # 3) Artrosia # 4) Zifoeskoliosia#1
+Zein da heste lodiaren funtzio? # 1) Nutrienteen absorzioa # 2) Elikagaien digestioa # 3) Uraren absorzioa # 4) Hondakinen kanporaketa#3
+Gorputzaren zein organok sortzen du behazuna? # 1) Gibela # 2) Pankrea # 3) Hezte mehea # 4) Giltzurrun#1
+Zein da groputzaren hezurrik txikiena? # 1) Ingudea # 2) Falangea # 3) Estribua # 4) Femurra#3
+Zein da munduko ugaztunik handiena? # 1) Elefantea # 2) Bale urdina # 3) Errinozerontea # 4) Katxalotea#2
+Zein da munduko animalirik indartsuena bere tamainarekiko proportzioa kontuan hartzen badugu? # 1) Inurria # 2) Errinozeronte Kakalardoa # 3) Elefantea # 4) Arkakusoa#2
+Zenbat urdail ditu behi batek? # 1) Bat # 2) Bi # 3) Hiru # 4) Lau#4
+Zein bakteriak eraldatzen du esnea yougrtean? # 1) Salmonella # 2) Streptococcus # 3) Lactobacillus # 4) Escherichia Coli#3
+Nork proposatu zuen eboluzioaren teoria? # 1) Gregor Mendel # 2) Louis Pasteur # 3) Charles Darwin # 4) Lynn Margulis#3
+Zein da animali eta landare zelulen arteko ezberdintasuna? # 1) Kanpoko mintza # 2) Kloroplastoa # 3) Bakuolo kopurua # 4) Hirurak#4
+Zenbat fase ditu fotosintesiak? # 1) Bat # 2) Bi # 3) Hiru # 4) Lau#2
+Zenbat zelula motak osatzen dute odola? # 1) Hiru # 2) Bi # 3) Bat # 4) Milioika#1
+Ze forma dauka DNA-k? # 1) Helize itxura # 2) Helize Bikoitza # 3) Hari bat # 4) Hari bikoitza#2
+Zer esan nahi du ADN siglak? # 1) Azido erribonukleiko # 2) Azido dinukleidoa # 3) Azido desoxirribonukleikoa # 4) Azido demoglukieikoa#3
+Zein zelula prozezutik lortzen da energia? # 1) Arnasketa zelularra # 2) Fotosintesia # 3) Digestioa # 4) Deskarboxilazioa#1
+Ze prozezu erabiltzen dute zelulek ugaltzeko? # 1) Erreprodukzioa # 2) Mitosia # 3) Meiosia # 4) Misosia#2
+Zenbat kromosoma ditu gizakiak? # 1) 46 # 2) 40 # 3) 23 # 4) 20 #1
+Zerez osatuta dago gehien bat gizakiaren gorputza? # 1) Gatz mineralez # 2) Hezurrez # 3) Urez # 4) Nukleotidoz#3
+Zerez osatuta dago DNA? # 1) Nukleotidoz # 2) Azidoz # 3) Fosfatoz # 4) Gluzidoz#1
+Zer da laktosa? # 1) Lipido bat # 2) Gantz azido bat # 3) Azido nukleiko bat # 4) Gluzido bat#4
