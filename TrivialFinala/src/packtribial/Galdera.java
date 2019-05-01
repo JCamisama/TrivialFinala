@@ -58,6 +58,7 @@ public boolean erantzunZuzena() {
 		erantzunaOndo = true;
 		System.out.println("Zure erantzuna ondo dago");
 		System.out.println("Oso ondo, segi horrela");
+		System.out.println("");
 		
 	}
 		
@@ -65,6 +66,7 @@ public boolean erantzunZuzena() {
 			
 		System.out.println("Zure erantzuna gaizki dago");
 		System.out.println("Ooooo, pena bat da, biana hurrengoan ondo egingo duzu. Animo!");
+		System.out.println("");
 		
 		}
 	
