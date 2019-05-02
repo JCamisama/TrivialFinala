@@ -12,7 +12,7 @@ public class JokalariaTest {
 	public void setUp() throws Exception {
 		//public Jokalaria(String pKolorea, int pPosizioaErrenkada, int pPosizioaZutabea, boolean pHasierakoPasilloa){
 		jokalari1=new Jokalaria("gorria",3,0,true);
-		jokalari2=new Jokalaria("berdea",0,0,true);
+		jokalari2=new Jokalaria("berdea",0,1,true);
 		Tableroa.getNireTableroa().tableroaHasieratu();
 		ListaGalderak.getNireListaGalderak().galderakKonfiguratu();
 	}
@@ -34,6 +34,13 @@ public class JokalariaTest {
 	@Test
 	public void testTxandaBurutu() {
 		jokalari1.txandaBurutu();
+		jokalari2.gehituGaztatxoa("gorria");
+		jokalari2.gehituGaztatxoa("berdea");
+		jokalari2.gehituGaztatxoa("laranja");
+		jokalari2.gehituGaztatxoa("horia");
+		jokalari2.gehituGaztatxoa("morea");
+		jokalari2.gehituGaztatxoa("urdina");
+		assertTrue(jokalari2.txandaBurutu());
 	}
 
 	@Test

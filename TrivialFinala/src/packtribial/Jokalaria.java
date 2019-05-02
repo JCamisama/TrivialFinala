@@ -34,8 +34,9 @@ public class Jokalaria {
         Dadoa dadoHau = Dadoa.getNireDadoa();
         
         do{
+        	kont++;
         	if (this.hasierakoPasilloan){
-	        	Teklatua.getTeklatua().skipLine("Jokalari " + this.kolorea + " " + this.posizioaErrenkada + ".pasilloko " + this.posizioaZutabea +".posiziokoa, sakatu ENTER dadoa botatzeko");
+	        	Teklatua.getTeklatua().skipLine(kont+".txanda: Jokalari " + this.kolorea + " " + this.posizioaErrenkada + ".pasilloko " + this.posizioaZutabea +".posiziokoa, sakatu ENTER dadoa botatzeko");
 	        }
         	else{
         	Teklatua.getTeklatua().skipLine("Jokalari " + this.kolorea + " zirkuluko " + this.posizioaZutabea +".posiziokoa, sakatu ENTER dadoa botatzeko");
@@ -58,14 +59,19 @@ public class Jokalaria {
 	        this.setPosizioaZutabea(aldaketak.getPosizioaZutabea());
 	        txandarenEmaitza = aldaketak.getTxandarenEmaitza();
         
-	        kont++;
+	        
 	        System.out.println("Jokalari "+this.kolorea+" "+kont+".txanda bukatu du.");
 	        System.out.println("\n");
-	        if (this.hasierakoPasilloan){
-	        	Teklatua.getTeklatua().skipLine("Jokalari "+this.kolorea+" "+this.posizioaErrenkada+".pasilloko "+this.posizioaZutabea+".kasillan bukatu du txanda.");
+	        if (!garaileaDa){
+	        	if (this.hasierakoPasilloan){
+	        		Teklatua.getTeklatua().skipLine("Jokalari "+this.kolorea+" "+this.posizioaErrenkada+".pasilloko "+this.posizioaZutabea+".kasillan bukatu du txanda.");
+	        	}
+	        	else{
+	        		Teklatua.getTeklatua().skipLine("Jokalari "+this.kolorea+" "+this.posizioaZutabea+".kasillan bukatu du txanda.");
+	        	}
 	        }
 	        else{
-	        	Teklatua.getTeklatua().skipLine("Jokalari "+this.kolorea+" "+this.posizioaZutabea+".kasillan bukatu du txanda.");
+	        	Teklatua.getTeklatua().skipLine("Jokalari "+this.kolorea+" partida bukatu du.");
 	        }
         }while(txandarenEmaitza && !garaileaDa);
         
