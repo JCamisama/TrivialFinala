@@ -161,7 +161,7 @@ public class Tableroa {
 		int	posizioBerria	= pEgungoPosizioa;
 		switch (noraMugitu){
 		case "aurrera":
-			
+			// ponerlo en el powerpoint el fallo del if y no en case
 			posizioBerria	= posizioBerria + pZenbatMugitu;
 			if (posizioBerria > 41){
 				

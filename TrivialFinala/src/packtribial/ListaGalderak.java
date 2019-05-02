@@ -74,7 +74,7 @@ public class ListaGalderak {
 		
 		while(sc.hasNextLine()) {
 			
-			
+			// salbuespen de fitxero mal
 			galderaErantzuna = sc.nextLine();
 			zatiak= galderaErantzuna.split("#");
 			galdera = zatiak[0];
