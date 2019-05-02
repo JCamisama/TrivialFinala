@@ -203,7 +203,190 @@ public class TableroaTest {
 		assertEquals(jokalaria.getPosizioaZutabea(),0);
 		assertEquals(jokalaria.getPosizioaErrenkada(),0);
 		assertTrue(jokalaria.getPartidaAmaituDa());
+		
+		}
+	
+	@Test
+	public void testFitxaMugituLehenengoAmaiera() {
+		
+		JokalariaAldaketak jokalaria=null;
+		
+		lista.gehituGaztatxoa("gorria");
+		lista.gehituGaztatxoa("laranja");
+		lista.gehituGaztatxoa("urdina");
+		lista.gehituGaztatxoa("horia");
+		lista.gehituGaztatxoa("morea");
+		lista.gehituGaztatxoa("berdea");
+		//0. pasilloan eta 0. pasilloan jarraitu, lauki normalean
+		jokalaria=tableroBat.fitxaMugitu(true, 1, 6, lista, 1);
+		assertTrue(jokalaria.getHasierakoPasilloa());
+		assertEquals(jokalaria.getPosizioaZutabea(),5);
+		assertEquals(jokalaria.getPosizioaErrenkada(),0);
 	}
+	
+	@Test
+	public void testFitxaMugituLehenengoAmaieraKasilla() {
+		
+		JokalariaAldaketak jokalaria=null;
+		
+		lista.gehituGaztatxoa("gorria");
+		lista.gehituGaztatxoa("laranja");
+		lista.gehituGaztatxoa("urdina");
+		lista.gehituGaztatxoa("horia");
+		lista.gehituGaztatxoa("morea");
+		lista.gehituGaztatxoa("berdea");
+		//0. pasilloan eta 0. pasilloan jarraitu, lauki normalean
+		jokalaria=tableroBat.fitxaMugitu(true, 1, 6, lista, 6);
+		assertTrue(jokalaria.getHasierakoPasilloa());
+		assertEquals(jokalaria.getPosizioaZutabea(),0);
+		assertEquals(jokalaria.getPosizioaErrenkada(),0);
+	}
+	
+	@Test
+	public void testFitxaMugituBigarrenAmaiera() {
+		
+		JokalariaAldaketak jokalaria=null;
+		
+		lista.gehituGaztatxoa("gorria");
+		lista.gehituGaztatxoa("laranja");
+		lista.gehituGaztatxoa("urdina");
+		lista.gehituGaztatxoa("horia");
+		lista.gehituGaztatxoa("morea");
+		lista.gehituGaztatxoa("berdea");
+		//0. pasilloan eta 0. pasilloan jarraitu, lauki normalean
+		jokalaria=tableroBat.fitxaMugitu(true, 2, 6, lista, 1);
+		assertTrue(jokalaria.getHasierakoPasilloa());
+		assertEquals(jokalaria.getPosizioaZutabea(),5);
+		assertEquals(jokalaria.getPosizioaErrenkada(),0);
+	}
+	
+	@Test
+	public void testFitxaMugituBigarrenAmaieraKasilla() {
+		
+		JokalariaAldaketak jokalaria=null;
+		
+		lista.gehituGaztatxoa("gorria");
+		lista.gehituGaztatxoa("laranja");
+		lista.gehituGaztatxoa("urdina");
+		lista.gehituGaztatxoa("horia");
+		lista.gehituGaztatxoa("morea");
+		lista.gehituGaztatxoa("berdea");
+		//0. pasilloan eta 0. pasilloan jarraitu, lauki normalean
+		jokalaria=tableroBat.fitxaMugitu(true, 2, 6, lista, 6);
+		assertTrue(jokalaria.getHasierakoPasilloa());
+		assertEquals(jokalaria.getPosizioaZutabea(),0);
+		assertEquals(jokalaria.getPosizioaErrenkada(),0);
+	}
+	
+	@Test
+	public void testFitxaMugituHirugarrenAmaiera() {
+		
+		JokalariaAldaketak jokalaria=null;
+		
+		lista.gehituGaztatxoa("gorria");
+		lista.gehituGaztatxoa("laranja");
+		lista.gehituGaztatxoa("urdina");
+		lista.gehituGaztatxoa("horia");
+		lista.gehituGaztatxoa("morea");
+		lista.gehituGaztatxoa("berdea");
+		//0. pasilloan eta 0. pasilloan jarraitu, lauki normalean
+		jokalaria=tableroBat.fitxaMugitu(true, 3, 6, lista, 1);
+		assertTrue(jokalaria.getHasierakoPasilloa());
+		assertEquals(jokalaria.getPosizioaZutabea(),5);
+		assertEquals(jokalaria.getPosizioaErrenkada(),0);
+	}
+	
+	@Test
+	public void testFitxaMugituHirugarrenAmaieraKasilla() {
+		
+		JokalariaAldaketak jokalaria=null;
+		
+		lista.gehituGaztatxoa("gorria");
+		lista.gehituGaztatxoa("laranja");
+		lista.gehituGaztatxoa("urdina");
+		lista.gehituGaztatxoa("horia");
+		lista.gehituGaztatxoa("morea");
+		lista.gehituGaztatxoa("berdea");
+		//0. pasilloan eta 0. pasilloan jarraitu, lauki normalean
+		jokalaria=tableroBat.fitxaMugitu(true, 2, 6, lista, 6);
+		assertTrue(jokalaria.getHasierakoPasilloa());
+		assertEquals(jokalaria.getPosizioaZutabea(),0);
+		assertEquals(jokalaria.getPosizioaErrenkada(),0);
+	}
+	
+	@Test
+	public void testFitxaMugituLaugarrenAmaiera() {
+		
+		JokalariaAldaketak jokalaria=null;
+		
+		lista.gehituGaztatxoa("gorria");
+		lista.gehituGaztatxoa("laranja");
+		lista.gehituGaztatxoa("urdina");
+		lista.gehituGaztatxoa("horia");
+		lista.gehituGaztatxoa("morea");
+		lista.gehituGaztatxoa("berdea");
+		//0. pasilloan eta 0. pasilloan jarraitu, lauki normalean
+		jokalaria=tableroBat.fitxaMugitu(true, 4, 6, lista, 1);
+		assertTrue(jokalaria.getHasierakoPasilloa());
+		assertEquals(jokalaria.getPosizioaZutabea(),5);
+		assertEquals(jokalaria.getPosizioaErrenkada(),0);
+	}
+	
+	@Test
+	public void testFitxaMugituLaugarrenAmaieraKasilla() {
+		
+		JokalariaAldaketak jokalaria=null;
+		
+		lista.gehituGaztatxoa("gorria");
+		lista.gehituGaztatxoa("laranja");
+		lista.gehituGaztatxoa("urdina");
+		lista.gehituGaztatxoa("horia");
+		lista.gehituGaztatxoa("morea");
+		lista.gehituGaztatxoa("berdea");
+		//0. pasilloan eta 0. pasilloan jarraitu, lauki normalean
+		jokalaria=tableroBat.fitxaMugitu(true, 4, 6, lista, 6);
+		assertTrue(jokalaria.getHasierakoPasilloa());
+		assertEquals(jokalaria.getPosizioaZutabea(),0);
+		assertEquals(jokalaria.getPosizioaErrenkada(),0);
+	}
+	
+	
+	@Test
+	public void testFitxaMugituBostgarrenAmaiera() {
+		
+		JokalariaAldaketak jokalaria=null;
+		
+		lista.gehituGaztatxoa("gorria");
+		lista.gehituGaztatxoa("laranja");
+		lista.gehituGaztatxoa("urdina");
+		lista.gehituGaztatxoa("horia");
+		lista.gehituGaztatxoa("morea");
+		lista.gehituGaztatxoa("berdea");
+		//0. pasilloan eta 0. pasilloan jarraitu, lauki normalean
+		jokalaria=tableroBat.fitxaMugitu(true, 5, 6, lista, 1);
+		assertTrue(jokalaria.getHasierakoPasilloa());
+		assertEquals(jokalaria.getPosizioaZutabea(),5);
+		assertEquals(jokalaria.getPosizioaErrenkada(),0);
+	}
+	
+	@Test
+	public void testFitxaMugituBostgarrenAmaieraKasilla() {
+		
+		JokalariaAldaketak jokalaria=null;
+		
+		lista.gehituGaztatxoa("gorria");
+		lista.gehituGaztatxoa("laranja");
+		lista.gehituGaztatxoa("urdina");
+		lista.gehituGaztatxoa("horia");
+		lista.gehituGaztatxoa("morea");
+		lista.gehituGaztatxoa("berdea");
+		//0. pasilloan eta 0. pasilloan jarraitu, lauki normalean
+		jokalaria=tableroBat.fitxaMugitu(true, 5, 6, lista, 6);
+		assertTrue(jokalaria.getHasierakoPasilloa());
+		assertEquals(jokalaria.getPosizioaZutabea(),0);
+		assertEquals(jokalaria.getPosizioaErrenkada(),0);
+	}
+	
 	
 	@Test
 	public void testTableroaHasieratu() {
