@@ -48,7 +48,7 @@ public class ListaJokalariak {
 			if (txanda+1>this.jokalariKop){// arrayaren indizea eta kopurua ez direlako berdinak!!!
 				txanda=0;
 			}
-			garailea=lista[txanda].txandaBurutu(txanda); //boolean o int no se sabe aún
+			garailea=lista[txanda].txandaBurutu(); //boolean o int no se sabe aún
 			//TODO
 		}
 		this.partidaBukatu(lista[txanda].getFitxarenKolorea());//nick-a ipini diateke

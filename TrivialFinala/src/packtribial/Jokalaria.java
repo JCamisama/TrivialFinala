@@ -24,7 +24,7 @@ public class Jokalaria {
 	}
 	
 	
-	public boolean txandaBurutu(int pTxanda){
+	public boolean txandaBurutu(){
 
 		boolean garaileaDa=false;
 		boolean txandarenEmaitza=false;					//Konprobatzeko ea jokalariak ondo edo txarto erantzun duen, txanda errepikatzeko
@@ -35,14 +35,14 @@ public class Jokalaria {
         
         do{
         	if (this.hasierakoPasilloan){
-	        	Teklatua.getTeklatua().skipLine("Jokalari" + this.kolorea + " " + this.posizioaErrenkada + ". pasilloko " + this.posizioaZutabea +". posiziokoa, sakatu ENTER dadoa botatzeko");
+	        	Teklatua.getTeklatua().skipLine("Jokalari " + this.kolorea + " " + this.posizioaErrenkada + ".pasilloko " + this.posizioaZutabea +".posiziokoa, sakatu ENTER dadoa botatzeko");
 	        }
         	else{
-        	Teklatua.getTeklatua().skipLine("Jokalari" + this.kolorea + " zirkuluko " + this.posizioaZutabea +". posiziokoa, sakatu ENTER dadoa botatzeko");
+        	Teklatua.getTeklatua().skipLine("Jokalari " + this.kolorea + " zirkuluko " + this.posizioaZutabea +".posiziokoa, sakatu ENTER dadoa botatzeko");
         	}
 	        dadoHau.bota();
 	        int ateratakoa = dadoHau.getGoikoAldea();
-	        Teklatua.getTeklatua().skipLine( "Sakatu ENTER fitxa" + ateratakoa + " posizio mugitzeko");
+	        Teklatua.getTeklatua().skipLine( "Sakatu ENTER fitxa " + ateratakoa + " posizio mugitzeko");
 	
 	        //Tableroa klasean fitxa mugitzeko
 	        
@@ -59,15 +59,15 @@ public class Jokalaria {
 	        txandarenEmaitza = aldaketak.getTxandarenEmaitza();
         
 	        kont++;
-	        System.out.println("Jokalari "+this.kolorea+" "+kont+". txanda bukatu du.");
+	        System.out.println("Jokalari "+this.kolorea+" "+kont+".txanda bukatu du.");
 	        System.out.println("\n");
 	        if (this.hasierakoPasilloan){
-	        	Teklatua.getTeklatua().skipLine("Jokalari "+this.kolorea+" "+this.posizioaErrenkada+". pasilloko"+this.posizioaZutabea+". kasillan bukatu du txanda.");
+	        	Teklatua.getTeklatua().skipLine("Jokalari "+this.kolorea+" "+this.posizioaErrenkada+".pasilloko "+this.posizioaZutabea+".kasillan bukatu du txanda.");
 	        }
 	        else{
-	        	Teklatua.getTeklatua().skipLine("Jokalari "+this.kolorea+" "+this.posizioaZutabea+". kasillan bukatu du txanda.");
+	        	Teklatua.getTeklatua().skipLine("Jokalari "+this.kolorea+" "+this.posizioaZutabea+".kasillan bukatu du txanda.");
 	        }
-        }while(txandarenEmaitza);
+        }while(txandarenEmaitza && !garaileaDa);
         
         
         

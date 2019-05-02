@@ -24,7 +24,7 @@ public class ListaGaztatxoak {
 
         else if(pGaztatxoa == "zuzena"){
         	
-        	System.out.println("Ondo erantzun duzu galdera, baina ez duzu gazta berririk lortu. \n");
+        	System.out.println("Ondo erantzun duzu galdera, baina ez duzu gazta berririk lortu, lauki normala delako. \n");
         		
         }
         

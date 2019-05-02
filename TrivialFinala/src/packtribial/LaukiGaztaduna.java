@@ -4,7 +4,7 @@ public class LaukiGaztaduna extends Laukia{
 
 	private int 		errenkada;
 	//private static int 	zutabeaPasilloan = 6;
-	private int			zutabeaPasilloan = 7;
+	private int			zutabeaPasilloan = 6;
 	private int			zutabeaZirkuluan;
 	
 	LaukiGaztaduna(String pKolorea, int pErrenkada, int pZutabeaZirkuluan){

@@ -7,48 +7,45 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class JokalariaTest {
-
+	Jokalaria jokalari1,jokalari2;
 	@Before
 	public void setUp() throws Exception {
+		//public Jokalaria(String pKolorea, int pPosizioaErrenkada, int pPosizioaZutabea, boolean pHasierakoPasilloa){
+		jokalari1=new Jokalaria("gorria",3,0,true);
+		jokalari2=new Jokalaria("berdea",0,0,true);
+		Tableroa.getNireTableroa().tableroaHasieratu();
+		ListaGalderak.getNireListaGalderak().galderakKonfiguratu();
 	}
 
 	@After
 	public void tearDown() throws Exception {
+		jokalari1=null;
+		jokalari2=null;
+		Tableroa.getNireTableroa().erreseteatu();
+		ListaGalderak.getNireListaGalderak().erreseteatu();
 	}
 
 	@Test
 	public void testJokalaria() {
-		fail("Not yet implemented");
+		assertNotNull(jokalari1);
+		assertNotNull(jokalari2);
 	}
 
 	@Test
 	public void testTxandaBurutu() {
-		fail("Not yet implemented");
+		jokalari1.txandaBurutu();
 	}
 
 	@Test
 	public void testGetFitxarenKolorea() {
-		fail("Not yet implemented");
+		assertEquals(jokalari1.getFitxarenKolorea(),"gorria");
+		assertEquals(jokalari2.getFitxarenKolorea(),"berdea");
 	}
 
 	@Test
 	public void testGehituGaztatxoa() {
-		fail("Not yet implemented");
+		jokalari1.gehituGaztatxoa("gorria");
 	}
 
-	@Test
-	public void testSetPosizioaErrenkada() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetPosizioaZutabea() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testSetPasilloa() {
-		fail("Not yet implemented");
-	}
 
 }
