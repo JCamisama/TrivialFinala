@@ -17,19 +17,19 @@ public class Trivial {
 	private void partidaBatJolastu() {
 		this.erreseteatu();
 		//Salbuespen 2 jokalari minimo.
-		int jokalariKop=Teklatua.getTeklatua().irakurriOsoa("Sartu jokalari kopurua, 2-6 jokalari");
-		this.partidaHasieratu(jokalariKop);
-		ListaJokalariak.getNireListaJokalariak().jokalarienTxandaKudeatu(jokalariKop);//TODO
+		
+		this.partidaHasieratu();
+		ListaJokalariak.getNireListaJokalariak().jokalarienTxandaKudeatu();//TODO
 	}
 	
-	private void partidaHasieratu(int pJokalariKop) {
-		ListaJokalariak.getNireListaJokalariak().hasieratuJokalariak(pJokalariKop);
+	private void partidaHasieratu() {
+		ListaJokalariak.getNireListaJokalariak().hasieratuJokalariak();
 		Tableroa.getNireTableroa().tableroaHasieratu();
+		ListaGalderak.getNireListaGalderak().galderakKonfiguratu();
 	}
 	
 	private void erreseteatu(){
 		Tableroa.getNireTableroa().erreseteatu();
-		ListaJokalariak.getNireListaJokalariak().erreseteatu();
 		ListaGalderak.getNireListaGalderak().erreseteatu();
 	}
 	

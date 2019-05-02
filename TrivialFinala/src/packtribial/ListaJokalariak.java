@@ -19,10 +19,11 @@ public class ListaJokalariak {
 	//atributuak
 	private Jokalaria[] lista;
 	private static ListaJokalariak nireListaJokalariak = null;
-    private int jokalariKop=2;//defektuz 2
+    private int jokalariKop=2;//defektuz 2 jokalari (1 Array-ak 0-an hasten direlako).
     private int luzera=0;
 	//eraikitazilea
 	private ListaJokalariak() {
+		this.jokalariKop=Teklatua.getTeklatua().irakurriOsoa("Sartu jokalari kopurua, 2-6 jokalari");
 		this.lista = new Jokalaria[this.jokalariKop];
 	}
 
@@ -38,24 +39,21 @@ public class ListaJokalariak {
 		//Salbuespen if jokalari kop 6 edo 2
 		this.lista[this.luzera]=pJokalaria;
 		luzera++;//TODO
+
 	}
 	
-	public void jokalarienTxandaKudeatu(int pJokalariKop) {
+	public void jokalarienTxandaKudeatu() {
 		int txanda=-1;
 		boolean garailea=false;
 		while(!garailea){ //txanda kopuru limitatua ipini denbora badago
 			txanda++;
-			if (txanda+1>this.jokalariKop){// arrayaren indizea eta kopurua ez direlako berdinak!!!
+			if (txanda==this.jokalariKop){// arrayaren indizea eta kopurua ez direlako berdinak!!!
 				txanda=0;
 			}
 			garailea=lista[txanda].txandaBurutu(); //boolean o int no se sabe aún
 			//TODO
 		}
 		this.partidaBukatu(lista[txanda].getFitxarenKolorea());//nick-a ipini diateke
-	}
-
-	public void setJokalariKop(int pKop){
-		this.jokalariKop=pKop;//TODO
 	}
 	
 	public void partidaBukatu(String pFitxarenKolorea) {
@@ -66,9 +64,8 @@ public class ListaJokalariak {
 		ListaJokalariak.nireListaJokalariak=null;
 	}
 	
-	public void hasieratuJokalariak(int pJokalariKop){
+	public void hasieratuJokalariak(){
 		//public Jokalaria(String pKolorea, int pPosizioaErrenkada, int pPosizioaZutabea, boolean pHasierakoPasilloa){
-
 		int kont=0;
 		Jokalaria jokalariBat=null;
 		String[] zatiak=new String[4];
@@ -88,8 +85,7 @@ public class ListaJokalariak {
 		in = new InputStreamReader(fitx);			
 		sc = new Scanner(in);
 		
-		while (kont<pJokalariKop){
-			
+		while (kont<this.jokalariKop){
 			kont++;
 			jokalaria = sc.nextLine();
 			zatiak= jokalaria.split("#");
@@ -100,7 +96,6 @@ public class ListaJokalariak {
 			posizioaErrenkada = Integer.parseInt(posizioaE);
 			posizioaZutabea = Integer.parseInt(posizioaZ);				
 			hasierakoPasilloan = Boolean.parseBoolean(hasierakoP);
-			
 			jokalariBat=new Jokalaria(kolorea, posizioaErrenkada, posizioaZutabea, hasierakoPasilloan);
 			this.gehituJokalaria(jokalariBat);
 			
