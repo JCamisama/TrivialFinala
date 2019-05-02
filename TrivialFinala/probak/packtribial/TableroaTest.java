@@ -45,11 +45,26 @@ public class TableroaTest {
 	
 	@Test
 	public void testFitxaMugituZerogarrenPasilloa3() {
-		//Hasierako pasilloan eta hasierako pasilloan jarraitu, lauki gaztadunean
+		//Hasierako pasilloan eta zirkuluan amaitu, lauki normalean
 		tableroBat.fitxaMugitu(true, 0, 4, lista, 5);
 	}
 	
+	@Test
+	public void testFitxaMugituZirkuluan() {
+		//Zirkuluan eta zirkuluan jarraitu, lauki normalean
+		tableroBat.fitxaMugitu(false, 0, 4, lista, 5);
+	}
 	
+	public void testFitxaMugituZirkuluan2() {
+		lista.gehituGaztatxoa("gorria");
+		lista.gehituGaztatxoa("berdea");
+		lista.gehituGaztatxoa("urdina");
+		lista.gehituGaztatxoa("horia");
+		lista.gehituGaztatxoa("morea");
+		lista.gehituGaztatxoa("laranja");
+		//Zirkuluan eta 0. pasilloan sartu, lauki normalean
+		tableroBat.fitxaMugitu(false, 0, 6, lista, 3);
+	}
 
 	@Test
 	public void testTableroaHasieratu() {
