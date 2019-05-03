@@ -1,15 +1,15 @@
 Hauetako zein heroi da "Tate no Yuusha" animearen protagonista? # 1) Eskutuarena # 2) Ezpatarena # 3) Lantzarena # 4) Arkuarena#1
-Shiro "No game no life" animearen protagonistak zenbat urte ditu? # 1) 18 # 2) 11 # 3) 10 # 4) 16#2
-Zeintzuk dira Ash,"Pokemon" animearen protagonistaren lehenengo lagunak? # 1) Aura eta Blasco # 2) Misty eta James # 3) Jessie eta Brock # 4) Misty eta Brock#4
+Shiro, "No game no life" animearen protagonistak, zenbat urte ditu? # 1) 18 # 2) 11 # 3) 10 # 4) 16#2
+Zeintzuk dira Ash"Pokemon" animearen protagonistaren lehenengo lagunak? # 1) Aura eta Blasco # 2) Misty eta James # 3) Jessie eta Brock # 4) Misty eta Brock#4
 Zenbat transformazio ditu Goku "Dragon Ball" animearen protagonistak? # 1) 21 # 2) 12 # 3) 50 # 4) 16#1
 Nortzuk osatzen dute 7. taldea "Naruto" animean? # 1) Naruto, Hinata, Lee eta Kiba # 2) Sasuke, Kakashi, Tenten eta Naruto # 3) Naruto, Kakashi, Sasuke eta Sakura # 4) Orochimaru, Tsunade, Minato eta Vegeta#3
 Zein izan zen Monkey D Luffy "One Piece" animearen protagonistaren lehenengo ordainsaria? # 1) 30M # 2) 20M # 3) 500M # 4) 700M#1
 Zein izan zen Gokuk izan zuen lehenengo etsaia? # 1) Piccolo # 2) Bulma # 3)Yamcha # 4) Pilaff#3
 Nortzuk ziren Kiritoren lagunak gazteak zirenean "Sword Art Online: Alicization" animean? # 1) Eugeo eta Alice # 2) Asuna eta Sinon # 3) Klein eta Yui # 4) Suguha eta Leafa#1
 Otaku kulturan zer dira "loli" deituriko pertsonaiak? # 1) Oso gaztea den mutila # 2) Oso gaztea den neska # 3) Nerabeak # 4) Haurtxoak#2
-Otaku kulturan zer da "Onii-chan"? # 1) Anai nagusia # 2) Anai txikia # 3) Arreba nagusia # 4) Arreba txikia#1
-Otaku kulturan zer da "Onee-san"? # 1) Anai nagusia # 2) Anai txikia # 3) Arreba nagusia # 4) Arreba txikia#3
-Otaku kulturan ze esan nahi du "Kawaii" hitzak? # 1) Itsuzia # 2) Ederra # 3) Polita # 4) Janri bat#3
+Otaku kulturan zer esan nahi du "Onii-chan"? # 1) Anai nagusia # 2) Anai txikia # 3) Arreba nagusia # 4) Arreba txikia#1
+Otaku kulturan zer esan nahi du "Onee-san"? # 1) Anai nagusia # 2) Anai txikia # 3) Arreba nagusia # 4) Arreba txikia#3
+Otaku kulturan ze esan nahi du "Kawaii" hitzak? # 1) Itsuzia # 2) Ederra # 3) Polita # 4) Janari bat#3
 Hauetako zein pertsonaia "loli" bat da "Hataraku Saibou" animean? # 1) Plaketak # 2) Globulo gorria # 3) Globulo zuria # 4) Birusak#1
 Zein da "Shokugeki no soma" animearen protagonistaren helburua? # 1) Guztiak hiltzea # 2) Piraten erregea izatea # 3) Hokage izatea # 4) Bere aita sukaldean gainditzea#4
 Ze izenorde du "Boku no Hero" animearen protagonistak? # 1) El Midorillas # 2) Deku # 3) Nekko # 4) All Might#2
@@ -17,4 +17,4 @@ Zein da "One Punch man" animearen protagonistaren superpoderea? # 1) Ikusezintas
 Zein da Gokuren hile kolorea? # 1) Marroia # 2) Horia # 3) Beltza # 4) Zuria#3
 Zer da "Isekai" bat? # 1) Anime genero bat # 2) Pertsona bat magia duen beste mundu batera eramaten denean # 3) Anime bat non akzioa, borrokak eta superpodereak dauden # 4) Sukaldaritzazko anime bat#2
 Ze hile kolore du Saitama, "One Punch man" animearen protagonista? # 1) Urdina # 2) Beltza # 3) Arrosa # 4) Burusoila da#4
-"Boku no Hero" animean Izuku Midoriya nola lortzen du bere superpoderea? # 1) All Migh-en semea da # 2) All Migh-en hile bat jaten du # 3) Hainbat entrenatzerakoan lortzen du # 4) Jaio zenetik lortu zuen#2
+"Boku no Hero" animean Izuku Midoriyak nola lortzen du bere superpoderea? # 1) All Migh-en semea da # 2) All Migh-en hile bat jaten du # 3) Hainbat entrenatzerakoan lortzen du # 4) Jaio zenetik lortu zuen#2

@@ -1,4 +1,4 @@
-Zer futbol selekziok irabazi zuen Brasilgo 2014ko Munduko Txapelketa? # 1) Frantzia # 2) Espainia # 3) Brasil # 4) Alemania#4
+Zein futbol selekziok irabazi zuen Brasilgo 2014ko Munduko Txapelketa? # 1) Frantzia # 2) Espainia # 3) Brasil # 4) Alemania#4
 Zein da historiako norvegiar xakelari hoberena? # 1) Magnus Carlsen # 2) Fernando Llorente # 3) Edvard Munch # 4) Jan Garbarek#1
 Zenbat round daude boxeo olinpikoko borroka batean? # 1) Bi # 2) Bat # 3) Bost # 4) Hiru#4
 Nor izan zen MotoGP-munduko txapelduna 2017an? # 1) Fernando Alonso # 2) Dani Pedrosa # 3) Marc Marquez # 4) Valentino Rossi#3
@@ -6,7 +6,7 @@ NBA-ko zer taldetan egon zen Manu Ginobili argentinarra 2002tik 2018ra arte jola
 Zer herrialdean jolasten da gehigo dardoetara? # 1) Norvegiar # 2) Irlanda # 3) Mongolia # 4) Erresuma Batua#4
 Zeintzuk dira eraztun olinpikoen koloreak? # 1) Gorria, Urdina, Berdea, Morea, Zuria # 2) Gorria, Urdina, Berdea, Horia, Beltza # 3) Gorria, Urdina, Berdea, Horia, Zuria # 4) Gorria, Urdina, Berdea, Horia, Laranja#2
 Kataluniako zer hiritan aurkitzen da Camp Nou futbol zelaia? # 1) Tarragona # 2) Madril # 3) Bartzelona # 4) Bilbao#3
-Zenbak kubo koloreztatuta daude “Rubik-eko Kubo Magikoan"? # 1) 54 # 2) 56 # 3) 53 # 4) 52#1
+Zenbak kubo koloreztatuta daude Rubik-eko Kubo Magikoan"? # 1) 54 # 2) 56 # 3) 53 # 4) 52#1
 Nola deitzen da bere praktikatzaileek pisuak altxatzen dituzten kirola? # 1) Halterololifilia # 2) Halterofilia # 3) Halterofofilia # 4) Halterfilia#2
 Munduko zenbat final jokatu zituen futboleko selekzio Argentinarrak? # 1) Hiru # 2) Bost # 3) Lau # 4) Bi#3
 Zenbat mango ditu alde bakoitzean mahai-futbolak? # 1) Hiru # 2) Lau # 3) Zortzi # 4) Sei#2
