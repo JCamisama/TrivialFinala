@@ -1,5 +1,6 @@
 package packtribial;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Teklatua {
@@ -21,27 +22,30 @@ public class Teklatua {
 		sc.nextLine();
 	}
 	
-	public int irakurriOsoa(String pMezua) {
+	public int irakurriOsoaSalbuespen(String pMezua) {
 		System.out.println(pMezua+": ");
 		int zenbakia;
 		zenbakia=sc.nextInt();
 		return zenbakia;
 	}
 	
-	public String irakurriStringGaldera(String pMezua, ListaString pAukerak) {
-		System.out.println(pMezua+": ");
-		pAukerak.inprimatu();
-		String erantzuna;
-		erantzuna=sc.next();
+	public int irakurriOsoa(String pMezua) {
+		int erantzuna=0;
+		boolean kontrolpean=false;
+		do{
+			try{
+				erantzuna=this.irakurriOsoaSalbuespen(pMezua);
+				kontrolpean=true;
+		}
+			catch (InputMismatchException e){
+				System.out.println("Sartu duzun balioa ez da zenbaki oso bat, saiatu berriz. ");
+				sc=new Scanner(System.in);
+			}
+	}while (!kontrolpean);
 		return erantzuna;
-	}
+	}	
 	
 	
-	public String irakurriString(){
-		String erantzuna;
-		erantzuna=sc.nextLine();
-		return erantzuna;
-	}
 	//Metodo berriak
 	public String noraMugitu(String pMezua){
 		

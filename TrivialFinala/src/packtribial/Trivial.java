@@ -17,9 +17,14 @@ public class Trivial {
 	private void partidaBatJolastu() {
 		this.erreseteatu();
 		//Salbuespen 2 jokalari minimo.
-		
+		try{
 		this.partidaHasieratu();
-		ListaJokalariak.getNireListaJokalariak().jokalarienTxandaKudeatu();//TODO
+			ListaJokalariak.getNireListaJokalariak().jokalarienTxandaKudeatu();
+		}
+		catch (NullPointerException e){
+			System.out.println("Fitxategiren bat txarto jarrita dago, aldatu ezazu berriro jolastu baino lehen. ");
+		}
+		//TODO
 	}
 	
 	private void partidaHasieratu() {

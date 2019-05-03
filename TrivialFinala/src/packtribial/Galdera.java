@@ -1,7 +1,5 @@
 package packtribial;
 
-import java.io.InputStreamReader;
-import java.util.Scanner;
 
 public class Galdera {
 	
@@ -41,17 +39,15 @@ public class Galdera {
 	
 		galdera1.ImprimatuGaldera();
 	
-		boolean erantzunaOndo = false;
+		boolean erantzunaOndo = false;	
 	
-		System.out.println("Sartu zure erantzuna zenbaki moduan");	
-	
-		Scanner sc; 
+		Teklatua teklatua;
 
-		sc = new Scanner(System.in);
+		teklatua = Teklatua.getTeklatua();
 	
 		int emandErantzuna;
 	
-		emandErantzuna = sc.nextInt();
+		emandErantzuna = teklatua.irakurriOsoa("Sartu zure erantzuna zenbaki moduan (1-4)");
 	
 		if(emandErantzuna<1 || emandErantzuna>4){
 		throw (new AukeraDesegokiaException());

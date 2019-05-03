@@ -1,16 +1,12 @@
 package packtribial;
 
-import java.io.BufferedReader;
-import java.io.File;
+
 import java.io.InputStreamReader;
-import java.net.URL;
-import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.Scanner;
 import java.util.Random;
-import java.util.Scanner;
+
 
 
 
@@ -66,10 +62,9 @@ public class ListaGalderak {
 		String zuzena=null;
 		int eranEgokia=0;	
 
-					
 		zatiak= new String[6];
 		fitx = this.getClass().getClassLoader().getResourceAsStream("Fitxategiak/GalderaGorriaBideo-jokoak.txt");
-		in= new InputStreamReader(fitx);			
+		in= new InputStreamReader(fitx);
 		sc = new Scanner(in);
 		
 		while(sc.hasNextLine()) {
@@ -87,8 +82,8 @@ public class ListaGalderak {
 			
 			galderaBat=new Galdera(galdera, eranPosible1, eranPosible2, eranPosible3, eranPosible4, eranEgokia);
 			this.listaGorri.add(galderaBat);
-			
 		}
+		sc.close();
 		
 		
 		fitx = this.getClass().getClassLoader().getResourceAsStream("Fitxategiak/Galdera_berdeaBiologia.txt");
@@ -117,7 +112,7 @@ public class ListaGalderak {
 			
 			
 		}
-		
+		sc.close();
 		fitx = this.getClass().getClassLoader().getResourceAsStream("Fitxategiak/GalderaHoriaKirolak.txt");
 		in= new InputStreamReader(fitx);			
 		sc = new Scanner(in);
@@ -138,7 +133,7 @@ public class ListaGalderak {
 			this.listaHori.add(galderaBat);
 			
 		}
-		
+		sc.close();
 		fitx = this.getClass().getClassLoader().getResourceAsStream("Fitxategiak/GalderaLaranjaentretenimendua.txt");
 		in= new InputStreamReader(fitx);			
 		sc = new Scanner(in);
@@ -161,7 +156,7 @@ public class ListaGalderak {
 			this.listaLaranja.add(galderaBat);
 			
 		}
-		
+		sc.close();
 		fitx = this.getClass().getClassLoader().getResourceAsStream("Fitxategiak/Galdera_moreaOtaku.txt");
 		in= new InputStreamReader(fitx);			
 		sc = new Scanner(in);
@@ -183,7 +178,7 @@ public class ListaGalderak {
 			this.listaMore.add(galderaBat);
 			
 		}
-		
+		sc.close();
 		fitx = this.getClass().getClassLoader().getResourceAsStream("Fitxategiak/Galdera_UrdinaGeografia.txt");
 		in= new InputStreamReader(fitx);			
 		sc = new Scanner(in);
@@ -204,7 +199,8 @@ public class ListaGalderak {
 			galderaBat=new Galdera(galdera, eranPosible1, eranPosible2, eranPosible3, eranPosible4, eranEgokia);
 			this.listaUrdi.add(galderaBat);
 			
-		}
+		}	
+		sc.close();
 	}
 	
 	public boolean galderakFormulatu(String kolorea){
@@ -212,7 +208,6 @@ public class ListaGalderak {
 			Random zenbakiRandomak=null;
 			int egungoBalioa = 0;
 			Galdera galderaBat = null;
-			Galdera galderaBi = null;
 			boolean erantzuna= false;
 			
 					

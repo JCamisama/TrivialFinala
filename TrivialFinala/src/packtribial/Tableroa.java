@@ -1,17 +1,10 @@
 package packtribial;
 
-import java.util.*;
-import java.io.BufferedReader;
-import java.io.File;
+
 import java.io.InputStreamReader;
-import java.net.URL;
-import java.io.FileNotFoundException;
 import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.Scanner;
-import java.util.Random;
-import java.util.Scanner;
+
 
 public class Tableroa {
 	//atributuak
@@ -158,29 +151,28 @@ public class Tableroa {
 		Teklatua	teklatuHau	= Teklatua.getTeklatua();
 		String noraMugitu 		= teklatuHau.noraMugitu("Nora mugitu nahi duzu fitxa? (aurrera/atzera)");
 		//Salbuespena gertatuko da kasu honetan****************************************************
-		if (noraMugitu!="aurrera" || noraMugitu!="atzera"){
+		if (!noraMugitu.equals("aurrera") && !noraMugitu.equals("atzera")){
 			throw (new MugimenduDesegokiaException());
 		}
 		int	posizioBerria	= pEgungoPosizioa;
-		switch (noraMugitu){
-		case "aurrera":
+		if (noraMugitu.equals("aurrera")){
 			// ponerlo en el powerpoint el fallo del if y no en case
 			posizioBerria	= posizioBerria + pZenbatMugitu;
 			if (posizioBerria > 41){
 				
 				posizioBerria	= posizioBerria - 42; //Zerotik hasi behar delako zenbaketa "ken 42 egiten da"
 			}
-			break;
+		}
 		
 		
-		case "atzera":
+		else if  (noraMugitu.equals("atzera")){
 			
 			posizioBerria	= posizioBerria - pZenbatMugitu;
 			if(posizioBerria < 0){
 					
 				posizioBerria	= posizioBerria	+ 42; //Zeroa kontuan hartzeko "gehi 42 egiten da"
 			}
-			break;
+			
 		}
 			
 			
@@ -271,7 +263,7 @@ public class Tableroa {
 				
 				kont++;
 			}
-			
+			sc.close();
 			kont=0;
 			fitx = this.getClass().getClassLoader().getResourceAsStream("Fitxategiak/KanpokoTablero.txt");
 			in = new InputStreamReader(fitx);			
@@ -303,6 +295,7 @@ public class Tableroa {
 				
 				kont++;
 			}
+			sc.close();
 	    }
 	    public void erreseteatu(){
 	    	Tableroa.nireTableroa=null;

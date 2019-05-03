@@ -1,6 +1,5 @@
 package packtribial;
 import java.util.Random;
-import java.util.Scanner;
 
 public class Dadoa {
     //atributuak
@@ -35,12 +34,5 @@ public class Dadoa {
     	this.setGoikoAldea(egungoBalioa);   	
     }
     
-    /*
-    public void sartuNahiDuzunPuntuazioa() {
-    	Scanner sc = new Scanner(System.in);
-    	System.out.println("Sartu nahi duzun puntuazioa:");
-    	int punt = sc.nextInt();
-    	this.setGoikoAldea(punt);
-    }
-    */
+    
 }
