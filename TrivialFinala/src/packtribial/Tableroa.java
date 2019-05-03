@@ -152,12 +152,15 @@ public class Tableroa {
 	}
 		
 	
-	private int mugituZirkuluan(int pEgungoPosizioa, int pZenbatMugitu){
+	private int mugituZirkuluanSalbuespen(int pEgungoPosizioa, int pZenbatMugitu) throws MugimenduDesegokiaException{
 		
 		//*****************************************************************************************
 		Teklatua	teklatuHau	= Teklatua.getTeklatua();
 		String noraMugitu 		= teklatuHau.noraMugitu("Nora mugitu nahi duzu fitxa? (aurrera/atzera)");
 		//Salbuespena gertatuko da kasu honetan****************************************************
+		if (noraMugitu!="aurrera" || noraMugitu!="atzera"){
+			throw (new MugimenduDesegokiaException());
+		}
 		int	posizioBerria	= pEgungoPosizioa;
 		switch (noraMugitu){
 		case "aurrera":
@@ -182,6 +185,22 @@ public class Tableroa {
 			
 			
 		return posizioBerria;
+	}
+	
+	private int mugituZirkuluan(int pEgungoPosizioa, int pZenbatMugitu){
+		boolean kontrolpean=false;
+		int erantzuna=0;
+		do{
+			try{
+				erantzuna=this.mugituZirkuluanSalbuespen(pEgungoPosizioa, pZenbatMugitu);
+				kontrolpean=true;
+		}
+			catch (MugimenduDesegokiaException e){
+				e.inprimatu();
+			}
+	}while (!kontrolpean);
+		
+		return erantzuna;
 	}
 	
 	

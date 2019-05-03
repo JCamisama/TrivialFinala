@@ -19,11 +19,11 @@ public class ListaJokalariak {
 	//atributuak
 	private Jokalaria[] lista;
 	private static ListaJokalariak nireListaJokalariak = null;
-    private int jokalariKop=2;//defektuz 2 jokalari (1 Array-ak 0-an hasten direlako).
+    private int jokalariKop=2;//defektuz 2 jokalari 
     private int luzera=0;
 	//eraikitazilea
 	private ListaJokalariak() {
-		this.jokalariKop=Teklatua.getTeklatua().irakurriOsoa("Sartu jokalari kopurua, 2-6 jokalari");
+		this.setJokalariKop();
 		this.lista = new Jokalaria[this.jokalariKop];
 	}
 
@@ -59,6 +59,29 @@ public class ListaJokalariak {
 	public void partidaBukatu(String pFitxarenKolorea) {
 		System.out.println("Zorionak " + pFitxarenKolorea + " partida irabazi egin du!!!");
 	}
+	private void setJokalariKopSalbuespen() throws JokalariKopDesegokiaException{
+		int jokalariKopurua=Teklatua.getTeklatua().irakurriOsoa("Sartu jokalari kopurua, 2-6 jokalari");
+		if(jokalariKopurua<2 || jokalariKopurua>6){
+			throw (new JokalariKopDesegokiaException());
+		}
+		this.jokalariKop=jokalariKopurua;
+	}
+	
+	private void setJokalariKop(){
+		
+			boolean kontrolpean=false;
+			do{
+				try{
+					this.setJokalariKopSalbuespen();
+					kontrolpean=true;
+			}
+				catch (JokalariKopDesegokiaException e){
+					e.inprimatu();
+				}
+		}while (!kontrolpean);
+		
+
+	}
 	
 	public void erreseteatu(){
 		ListaJokalariak.nireListaJokalariak=null;
@@ -66,7 +89,6 @@ public class ListaJokalariak {
 	
 	public void hasieratuJokalariak(){
 		//public Jokalaria(String pKolorea, int pPosizioaErrenkada, int pPosizioaZutabea, boolean pHasierakoPasilloa){
-		int kont=0;
 		Jokalaria jokalariBat=null;
 		String[] zatiak=new String[4];
 		InputStream fitx=null;
@@ -80,6 +102,7 @@ public class ListaJokalariak {
 		int posizioaErrenkada=0;
 		int posizioaZutabea=0;
 		boolean hasierakoPasilloan=true;
+		int kont=0;
 		
 		fitx = this.getClass().getClassLoader().getResourceAsStream("Fitxategiak/JokalariFitxategi.txt");
 		in = new InputStreamReader(fitx);			
@@ -98,7 +121,6 @@ public class ListaJokalariak {
 			hasierakoPasilloan = Boolean.parseBoolean(hasierakoP);
 			jokalariBat=new Jokalaria(kolorea, posizioaErrenkada, posizioaZutabea, hasierakoPasilloan);
 			this.gehituJokalaria(jokalariBat);
-			
 		}
 	}
 }

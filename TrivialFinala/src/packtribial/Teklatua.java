@@ -28,7 +28,7 @@ public class Teklatua {
 		return zenbakia;
 	}
 	
-	public String irakurriString(String pMezua, ListaString pAukerak) {
+	public String irakurriStringGaldera(String pMezua, ListaString pAukerak) {
 		System.out.println(pMezua+": ");
 		pAukerak.inprimatu();
 		String erantzuna;
@@ -37,7 +37,11 @@ public class Teklatua {
 	}
 	
 	
-	
+	public String irakurriString(){
+		String erantzuna;
+		erantzuna=sc.nextLine();
+		return erantzuna;
+	}
 	//Metodo berriak
 	public String noraMugitu(String pMezua){
 		
