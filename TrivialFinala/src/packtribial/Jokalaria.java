@@ -61,17 +61,16 @@ public class Jokalaria {
         
 	        
 	        System.out.println("Jokalari "+this.kolorea+" "+kont+".txanda bukatu du.");
-	        System.out.println("\n");
 	        if (!garaileaDa){
 	        	if (this.hasierakoPasilloan){
-	        		Teklatua.getTeklatua().skipLine("Jokalari "+this.kolorea+" "+this.posizioaErrenkada+".pasilloko "+this.posizioaZutabea+".kasillan bukatu du txanda.");
+	        		Teklatua.getTeklatua().skipLine("Jokalari "+this.kolorea+" "+this.posizioaErrenkada+".pasilloko "+this.posizioaZutabea+".kasillan bukatu du txanda.\n");
 	        	}
 	        	else{
-	        		Teklatua.getTeklatua().skipLine("Jokalari "+this.kolorea+" "+this.posizioaZutabea+".kasillan bukatu du txanda.");
+	        		Teklatua.getTeklatua().skipLine("Jokalari "+this.kolorea+" "+this.posizioaZutabea+".kasillan bukatu du txanda. \n");
 	        	}
 	        }
 	        else{
-	        	Teklatua.getTeklatua().skipLine("Jokalari "+this.kolorea+" partida bukatu du.");
+	        	Teklatua.getTeklatua().skipLine("Jokalari "+this.kolorea+" partida bukatu du. \n");
 	        }
         }while(txandarenEmaitza && !garaileaDa);
         

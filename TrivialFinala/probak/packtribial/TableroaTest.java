@@ -203,7 +203,6 @@ public class TableroaTest {
 		assertEquals(jokalaria.getPosizioaZutabea(),0);
 		assertEquals(jokalaria.getPosizioaErrenkada(),0);
 		assertTrue(jokalaria.getPartidaAmaituDa());
-		
 		}
 	
 	@Test
@@ -221,7 +220,7 @@ public class TableroaTest {
 		jokalaria=tableroBat.fitxaMugitu(true, 1, 6, lista, 1);
 		assertTrue(jokalaria.getHasierakoPasilloa());
 		assertEquals(jokalaria.getPosizioaZutabea(),5);
-		assertEquals(jokalaria.getPosizioaErrenkada(),0);
+		assertEquals(jokalaria.getPosizioaErrenkada(),1);
 	}
 	
 	@Test
@@ -239,7 +238,8 @@ public class TableroaTest {
 		jokalaria=tableroBat.fitxaMugitu(true, 1, 6, lista, 6);
 		assertTrue(jokalaria.getHasierakoPasilloa());
 		assertEquals(jokalaria.getPosizioaZutabea(),0);
-		assertEquals(jokalaria.getPosizioaErrenkada(),0);
+		assertEquals(jokalaria.getPosizioaErrenkada(),1);
+		assertTrue(jokalaria.getPartidaAmaituDa());
 	}
 	
 	@Test
@@ -257,7 +257,7 @@ public class TableroaTest {
 		jokalaria=tableroBat.fitxaMugitu(true, 2, 6, lista, 1);
 		assertTrue(jokalaria.getHasierakoPasilloa());
 		assertEquals(jokalaria.getPosizioaZutabea(),5);
-		assertEquals(jokalaria.getPosizioaErrenkada(),0);
+		assertEquals(jokalaria.getPosizioaErrenkada(),2);
 	}
 	
 	@Test
@@ -275,7 +275,8 @@ public class TableroaTest {
 		jokalaria=tableroBat.fitxaMugitu(true, 2, 6, lista, 6);
 		assertTrue(jokalaria.getHasierakoPasilloa());
 		assertEquals(jokalaria.getPosizioaZutabea(),0);
-		assertEquals(jokalaria.getPosizioaErrenkada(),0);
+		assertEquals(jokalaria.getPosizioaErrenkada(),2);
+		assertTrue(jokalaria.getPartidaAmaituDa());
 	}
 	
 	@Test
@@ -293,7 +294,7 @@ public class TableroaTest {
 		jokalaria=tableroBat.fitxaMugitu(true, 3, 6, lista, 1);
 		assertTrue(jokalaria.getHasierakoPasilloa());
 		assertEquals(jokalaria.getPosizioaZutabea(),5);
-		assertEquals(jokalaria.getPosizioaErrenkada(),0);
+		assertEquals(jokalaria.getPosizioaErrenkada(),3);
 	}
 	
 	@Test
@@ -311,7 +312,8 @@ public class TableroaTest {
 		jokalaria=tableroBat.fitxaMugitu(true, 2, 6, lista, 6);
 		assertTrue(jokalaria.getHasierakoPasilloa());
 		assertEquals(jokalaria.getPosizioaZutabea(),0);
-		assertEquals(jokalaria.getPosizioaErrenkada(),0);
+		assertEquals(jokalaria.getPosizioaErrenkada(),3);
+		assertTrue(jokalaria.getPartidaAmaituDa());
 	}
 	
 	@Test
@@ -329,7 +331,7 @@ public class TableroaTest {
 		jokalaria=tableroBat.fitxaMugitu(true, 4, 6, lista, 1);
 		assertTrue(jokalaria.getHasierakoPasilloa());
 		assertEquals(jokalaria.getPosizioaZutabea(),5);
-		assertEquals(jokalaria.getPosizioaErrenkada(),0);
+		assertEquals(jokalaria.getPosizioaErrenkada(),4);
 	}
 	
 	@Test
@@ -347,7 +349,8 @@ public class TableroaTest {
 		jokalaria=tableroBat.fitxaMugitu(true, 4, 6, lista, 6);
 		assertTrue(jokalaria.getHasierakoPasilloa());
 		assertEquals(jokalaria.getPosizioaZutabea(),0);
-		assertEquals(jokalaria.getPosizioaErrenkada(),0);
+		assertEquals(jokalaria.getPosizioaErrenkada(),4);
+		assertTrue(jokalaria.getPartidaAmaituDa());
 	}
 	
 	
@@ -366,7 +369,7 @@ public class TableroaTest {
 		jokalaria=tableroBat.fitxaMugitu(true, 5, 6, lista, 1);
 		assertTrue(jokalaria.getHasierakoPasilloa());
 		assertEquals(jokalaria.getPosizioaZutabea(),5);
-		assertEquals(jokalaria.getPosizioaErrenkada(),0);
+		assertEquals(jokalaria.getPosizioaErrenkada(),5);
 	}
 	
 	@Test
@@ -384,7 +387,8 @@ public class TableroaTest {
 		jokalaria=tableroBat.fitxaMugitu(true, 5, 6, lista, 6);
 		assertTrue(jokalaria.getHasierakoPasilloa());
 		assertEquals(jokalaria.getPosizioaZutabea(),0);
-		assertEquals(jokalaria.getPosizioaErrenkada(),0);
+		assertEquals(jokalaria.getPosizioaErrenkada(),5);
+		assertTrue(jokalaria.getPartidaAmaituDa());
 	}
 	
 	

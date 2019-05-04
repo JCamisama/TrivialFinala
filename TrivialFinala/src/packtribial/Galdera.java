@@ -22,7 +22,7 @@ public class Galdera {
 	
 	}
 	
-	private void ImprimatuGaldera() {
+	private void imprimatuGaldera() {
 	
 		System.out.println(this.galdera);
 
@@ -36,41 +36,43 @@ public class Galdera {
 	private boolean erantzunZuzenaSalbuespen() throws AukeraDesegokiaException {
 	
 		Galdera galdera1 = new Galdera(galdera, eranPosible1, eranPosible2, eranPosible3, eranPosible4, zuzena);
+		
+		System.out.println("30 segundu dituzu erantzuna emateko");
+		System.out.println("");
+		
+		Kronometroa kron = Kronometroa.getNireKronometroa();
+		
+		kron.zeroanJarri();
+		
+		int krono  = 0;
 	
-		galdera1.ImprimatuGaldera();
+		galdera1.imprimatuGaldera();
+		System.out.println("");
 	
-		boolean erantzunaOndo = false;	
+		boolean erantzunaOndo = false;			
 	
 		Teklatua teklatua;
 
-		teklatua = Teklatua.getTeklatua();
-	
-		int emandErantzuna;
-	
+		teklatua = Teklatua.getTeklatua();		
+		
+		int emandErantzuna;			
+		
 		emandErantzuna = teklatua.irakurriOsoa("Sartu zure erantzuna zenbaki moduan (1-4)");
+		
+		krono = kron.pasaDirenSegunduakLortu();
 	
 		if(emandErantzuna<1 || emandErantzuna>4){
-		throw (new AukeraDesegokiaException());
-		}
+			throw (new AukeraDesegokiaException());
+		}		
 	
-		if (this.zuzena == emandErantzuna) {
+			if (krono<31 && this.zuzena == emandErantzuna) {
 		
-			erantzunaOndo = true;
-			System.out.println("Zure erantzuna ondo dago");
-			System.out.println("Oso ondo, segi horrela");
-			System.out.println("\n");
-		
-		}
-		
-		else {
-			
-			System.out.println("Zure erantzuna gaizki dago");
-			System.out.println("Ooooo, pena bat da, baina hurrengoan ondo egingo duzu. Animo!");
-			System.out.println("\n");
-		
+				erantzunaOndo = true;			
+				
 			}
 	
-	
+		kron.zeroanJarri();
+		
 		return erantzunaOndo;
 	}
 	

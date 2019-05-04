@@ -30,7 +30,7 @@ public class ListaGaztatxoak {
         
         else if(pGaztatxoa == "okerra"){
         	
-        	System.out.println("Txarto erantzun duzu galdera! \n");
+        	System.out.println("Txarto erantzun duzu galdera edo denbora pasatu da. \n");
         	
         }
         
