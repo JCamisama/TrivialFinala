@@ -37,7 +37,7 @@ public class Galdera {
 	
 		Galdera galdera1 = new Galdera(galdera, eranPosible1, eranPosible2, eranPosible3, eranPosible4, zuzena);
 		
-		System.out.println("30 segundu dituzu erantzuna emateko");
+		System.out.println("15 segundu dituzu erantzuna emateko");
 		System.out.println("");
 		
 		Kronometroa kron = Kronometroa.getNireKronometroa();
@@ -65,10 +65,16 @@ public class Galdera {
 			throw (new AukeraDesegokiaException());
 		}		
 	
-			if (krono<31 && this.zuzena == emandErantzuna) {
+			if (krono<16 && this.zuzena == emandErantzuna) {
 		
 				erantzunaOndo = true;			
 				
+			}
+			else if (krono<16 && this.zuzena != emandErantzuna){
+				System.out.println("Txarto erantzun duzu galdera.");
+			}
+			else{
+				System.out.println("Denboraz kanpo erantzun duzu galdera ");
 			}
 	
 		kron.zeroanJarri();
