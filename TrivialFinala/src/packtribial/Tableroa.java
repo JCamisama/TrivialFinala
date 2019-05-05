@@ -77,7 +77,7 @@ public class Tableroa {
 					
 					egungoZutabea = 0;
 				}
-				erantzuna		= this.bigarrenBidea[egungoZutabea].galderaFormulatu();
+				erantzuna		= this.lehenengoBidea[egungoErrenkada][egungoZutabea].galderaFormulatu();
 				
 				//Zerogarren laukira heltzeko behar baino gehiago ateratzen bada dadoan, onartuko dugu
 				if(egungoZutabea == 0 && erantzuna == "zuzena"){
