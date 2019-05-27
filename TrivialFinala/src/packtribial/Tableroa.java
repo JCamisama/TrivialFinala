@@ -96,6 +96,33 @@ public class Tableroa {
 			
 			else{
 				
+				int mugitzekoFalta	=  egungoZutabea + pAteratakoa - 6;
+				
+				//Positiboa edo zero bada, zirkulura ailegatu dela esan nahi du
+				if(mugitzekoFalta >= 0){
+					egungoZutabea		=	6; //Pasilloaren azkenengo laukitxora mugitzen, bertan zirkuluaren lotura baitago
+					hasierakoPasilloan	=	false;
+					egungoZutabea		=
+							((LaukiGaztaduna)this.lehenengoBidea[egungoErrenkada][egungoZutabea]).getZutabeaZirkuluan();
+				
+					if(mugitzekoFalta > 0){
+						
+						egungoZutabea		= this.mugituZirkuluan(egungoZutabea, mugitzekoFalta);
+						
+					}
+					
+				}
+				
+				//Negatiboa da, beraz, "hasiera" eta "gaztatxo" laukien artean (0 < egungoZutabea < 6)
+				else{
+					
+					egungoZutabea =	egungoZutabea + pAteratakoa;
+				}
+
+			
+			/*
+			else{
+				
 				while (kont < pAteratakoa && hasierakoPasilloan){
 				
 					kont++;
@@ -114,6 +141,7 @@ public class Tableroa {
 					egungoZutabea		= this.mugituZirkuluan(egungoZutabea,zenbatMugitu);
 					
 				}
+				*/
 				
 				//Mugimengua guztiz burutu dela, galdera eskatzeko momentua da
 				
