@@ -1,8 +1,7 @@
 package packtribial;
 
 import java.io.InputStreamReader;
-
-
+import java.io.File;
 import java.io.InputStream;
 import java.util.Scanner;
 
@@ -95,7 +94,8 @@ public class ListaJokalariak {
 		boolean hasierakoPasilloan=true;
 		int kont=0;
 		
-		fitx = this.getClass().getClassLoader().getResourceAsStream("Fitxategiak/JokalariFitxategi.txt");
+		String fitxategia="Fitxategiak"+File.separator+"JokalariFitxategi.txt";
+		fitx = this.getClass().getClassLoader().getResourceAsStream(fitxategia);
 		in = new InputStreamReader(fitx);			
 		sc = new Scanner(in);
 		

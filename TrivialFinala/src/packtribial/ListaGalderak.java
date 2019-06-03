@@ -2,6 +2,7 @@ package packtribial;
 
 
 import java.io.InputStreamReader;
+import java.io.File;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -329,41 +330,48 @@ public void galderakKonfiguratu(){
 		ArrayList<Galdera> zerrenda = null;
 		InputStream fitx = null;
 		
+		String fitxategia=null;
+		
 		switch (kolorea) {
 		
 			case "berdea":
-			
-				fitx = this.getClass().getClassLoader().getResourceAsStream("Fitxategiak/Galdera_berdeaBiologia.txt");
+				fitxategia="Fitxategiak"+File.separator+"Galdera_berdeaBiologia.txt";
+				fitx = this.getClass().getClassLoader().getResourceAsStream(fitxategia);
 				zerrenda= this.listaBerde;
 				break;
 				
 			case "gorria":
 				
-				fitx = this.getClass().getClassLoader().getResourceAsStream("Fitxategiak/GalderaGorriaBideo-jokoak.txt");
+				fitxategia="Fitxategiak"+File.separator+"GalderaGorriaBideo-jokoak.txt";
+				fitx = this.getClass().getClassLoader().getResourceAsStream(fitxategia);
 				zerrenda= this.listaGorri;
 				break;
 				
 			case "laranja":
 				
-				fitx = this.getClass().getClassLoader().getResourceAsStream("Fitxategiak/GalderaLaranjaentretenimendua.txt");
+				fitxategia="Fitxategiak"+File.separator+"GalderaLaranjaentretenimendua.txt";
+				fitx = this.getClass().getClassLoader().getResourceAsStream(fitxategia);
 				zerrenda= this.listaLaranja;
 				break;
 				
 			case "horia":
 				
-				fitx = this.getClass().getClassLoader().getResourceAsStream("Fitxategiak/GalderaHoriaKirolak.txt");
+				fitxategia="Fitxategiak"+File.separator+"GalderaHoriaKirolak.txt";
+				fitx = this.getClass().getClassLoader().getResourceAsStream(fitxategia);
 				zerrenda= this.listaHori;
 				break;
 				
 			case "morea":
 				
-				fitx = this.getClass().getClassLoader().getResourceAsStream("Fitxategiak/Galdera_moreaOtaku.txt");
+				fitxategia="Fitxategiak"+File.separator+"Galdera_moreaOtaku.txt";
+				fitx = this.getClass().getClassLoader().getResourceAsStream(fitxategia);
 				zerrenda= this.listaMore;
 				break;
 				
 			case "urdina":
 				
-				fitx = this.getClass().getClassLoader().getResourceAsStream("Fitxategiak/Galdera_UrdinaGeografia.txt");
+				fitxategia="Fitxategiak"+File.separator+"Galdera_UrdinaGeografia.txt";
+				fitx = this.getClass().getClassLoader().getResourceAsStream(fitxategia);
 				zerrenda= this.listaUrdi;
 				break;			
 		}		

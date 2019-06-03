@@ -2,6 +2,7 @@ package packtribial;
 
 
 import java.io.InputStreamReader;
+import java.io.File;
 import java.io.InputStream;
 import java.util.Scanner;
 
@@ -264,7 +265,9 @@ public class Tableroa {
 			Scanner sc = null;
 			String kolorea=null;
 			
-			fitx = this.getClass().getClassLoader().getResourceAsStream("Fitxategiak/BarrukoTablero.txt");
+			String fitxategia="Fitxategiak"+File.separator+"BarrukoTablero.txt";
+					
+			fitx = this.getClass().getClassLoader().getResourceAsStream(fitxategia);
 			in = new InputStreamReader(fitx);			
 			sc = new Scanner(in);
 			
@@ -293,7 +296,9 @@ public class Tableroa {
 			}
 			sc.close();
 			kont=0;
-			fitx = this.getClass().getClassLoader().getResourceAsStream("Fitxategiak/KanpokoTablero.txt");
+			fitxategia="Fitxategiak"+File.separator+"KanpokoTablero.txt";
+			
+			fitx = this.getClass().getClassLoader().getResourceAsStream(fitxategia);
 			in = new InputStreamReader(fitx);			
 			sc = new Scanner(in);
 			
