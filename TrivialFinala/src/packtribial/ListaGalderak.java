@@ -21,6 +21,7 @@ public class ListaGalderak {
 		private ArrayList<Galdera> listaHori;
 		private ArrayList<Galdera> listaMore;
 		private ArrayList<Galdera> listaUrdi;
+		private ArrayList<Galdera> listaBerezi;
 		
 		
 		//eraikitzailea
@@ -31,6 +32,7 @@ public class ListaGalderak {
 			this.listaHori = new ArrayList<Galdera>();
 			this.listaMore = new ArrayList<Galdera>();
 			this.listaUrdi = new ArrayList<Galdera>();
+			this.listaBerezi= new ArrayList<Galdera>();
 		}
 		
 		
@@ -52,6 +54,7 @@ public void galderakKonfiguratu(){
 	hasieratuGalderenZerrenda("laranja");
 	hasieratuGalderenZerrenda("morea");
 	hasieratuGalderenZerrenda("urdina");
+	hasieratuGalderenZerrenda("zuria");
 	
 }
 		
@@ -315,7 +318,24 @@ public void galderakKonfiguratu(){
 				
 				break;
 				
+			case "zuria":
+				
+				zenbakiRandomak=new Random();
+			    egungoBalioa=zenbakiRandomak.nextInt(19);
+			    galderaBat = this.listaBerezi.get(egungoBalioa);
+			    erantzuna =  galderaBat.erantzunZuzena();
+			    this.listaBerezi.remove(egungoBalioa);
+			    if (this.listaBerezi.size()==0) {
+			    	
+			    	this.hasieratuGalderenZerrenda(kolorea);
+			    	
+			    }
+			    
+				break;
+				
+				
 			}				
+			
 			
 			return erantzuna;
 			
@@ -373,7 +393,13 @@ public void galderakKonfiguratu(){
 				fitxategia="Fitxategiak"+File.separator+"Galdera_UrdinaGeografia.txt";
 				fitx = this.getClass().getClassLoader().getResourceAsStream(fitxategia);
 				zerrenda= this.listaUrdi;
-				break;			
+				break;		
+				
+			case "zuria":
+				fitxategia="Fitxategiak"+File.separator+"GalderaFinalak.txt";
+				fitx = this.getClass().getClassLoader().getResourceAsStream(fitxategia);
+				zerrenda= this.listaBerezi;
+				break;
 		}		
 		
 		this.hasieratuLista(zerrenda, fitx);

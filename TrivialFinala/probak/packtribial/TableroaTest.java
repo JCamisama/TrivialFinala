@@ -309,7 +309,7 @@ public class TableroaTest {
 		lista.gehituGaztatxoa("morea");
 		lista.gehituGaztatxoa("berdea");
 		//0. pasilloan eta 0. pasilloan jarraitu, lauki normalean
-		jokalaria=tableroBat.fitxaMugitu(true, 2, 6, lista, 6);
+		jokalaria=tableroBat.fitxaMugitu(true, 3, 6, lista, 6);
 		assertTrue(jokalaria.getHasierakoPasilloa());
 		assertEquals(jokalaria.getPosizioaZutabea(),0);
 		assertEquals(jokalaria.getPosizioaErrenkada(),3);
