@@ -59,7 +59,7 @@ public void galderakKonfiguratu(){
 }
 		
 
-	public boolean galderakFormulatu(String kolorea){
+	public boolean galderakFormulatu(String pKolorea){
 			
 			Random zenbakiRandomak=null;
 			int egungoBalioa = 0;
@@ -68,7 +68,7 @@ public void galderakKonfiguratu(){
 			
 			
 					
-			switch (kolorea) {
+			switch (pKolorea) {
 			
 			case "berdea":				
 				
@@ -80,7 +80,7 @@ public void galderakKonfiguratu(){
 			    this.listaBerde.remove(egungoBalioa);
 			    if (this.listaBerde.size()==0) {
 			    	
-			    	this.hasieratuGalderenZerrenda(kolorea);
+			    	this.hasieratuGalderenZerrenda(pKolorea);
 			    	
 			    }
 				
@@ -95,7 +95,7 @@ public void galderakKonfiguratu(){
 			    this.listaGorri.remove(egungoBalioa);
 			    if (this.listaGorri.size()==0) {
 			    	
-			    	this.hasieratuGalderenZerrenda(kolorea);
+			    	this.hasieratuGalderenZerrenda(pKolorea);
 			    	
 			    }
 				
@@ -110,7 +110,7 @@ public void galderakKonfiguratu(){
 			    this.listaHori.remove(egungoBalioa);
 			    if (this.listaHori.size()==0) {
 			    	
-			    	this.hasieratuGalderenZerrenda(kolorea);
+			    	this.hasieratuGalderenZerrenda(pKolorea);
 			    	
 			    }
 			    
@@ -125,7 +125,7 @@ public void galderakKonfiguratu(){
 			    this.listaLaranja.remove(egungoBalioa);
 			    if (this.listaLaranja.size()==0) {
 			    	
-			    	this.hasieratuGalderenZerrenda(kolorea);
+			    	this.hasieratuGalderenZerrenda(pKolorea);
 			    	
 			    }
 				
@@ -140,7 +140,7 @@ public void galderakKonfiguratu(){
 			    this.listaMore.remove(egungoBalioa);
 			    if (this.listaMore.size()==0) {
 			    	
-			    	this.hasieratuGalderenZerrenda(kolorea);
+			    	this.hasieratuGalderenZerrenda(pKolorea);
 			    	
 			    }
 				
@@ -155,7 +155,7 @@ public void galderakKonfiguratu(){
 			    this.listaUrdi.remove(egungoBalioa);
 			    if (this.listaUrdi.size()==0) {
 			    	
-			    	this.hasieratuGalderenZerrenda(kolorea);
+			    	this.hasieratuGalderenZerrenda(pKolorea);
 			    	
 			    }
 				
@@ -170,7 +170,7 @@ public void galderakKonfiguratu(){
 			    this.listaBerezi.remove(egungoBalioa);
 			    if (this.listaBerezi.size()==0) {
 			    	
-			    	this.hasieratuGalderenZerrenda(kolorea);
+			    	this.hasieratuGalderenZerrenda(pKolorea);
 			    	
 			    }
 			    
@@ -188,14 +188,14 @@ public void galderakKonfiguratu(){
 		ListaGalderak.nireListaGalderak=null;
 	}
 	
-	private void hasieratuGalderenZerrenda(String kolorea) {
+	private void hasieratuGalderenZerrenda(String pKolorea) {
 		
 		ArrayList<Galdera> zerrenda = null;
 		InputStream fitx = null;
 		
 		String fitxategia=null;
 		
-		switch (kolorea) {
+		switch (pKolorea) {
 		
 			case "berdea":
 				fitxategia="Fitxategiak"+File.separator+"Galdera_berdeaBiologia.txt";
@@ -249,7 +249,7 @@ public void galderakKonfiguratu(){
 	}
 	
 	
-	private void hasieratuLista(ArrayList<Galdera> zerrenda, InputStream fitx) {
+	private void hasieratuLista(ArrayList<Galdera> pZerrenda, InputStream pFitx) {
 		
 		Galdera galderaBat=null;
 		String[] zatiak=null;		
@@ -265,7 +265,7 @@ public void galderakKonfiguratu(){
 		int eranEgokia=0;	
 
 		zatiak= new String[6];		
-		in= new InputStreamReader(fitx);
+		in= new InputStreamReader(pFitx);
 		sc = new Scanner(in);
 		
 		while(sc.hasNextLine()) {
@@ -282,7 +282,7 @@ public void galderakKonfiguratu(){
 			eranEgokia = Integer.parseInt(zuzena);				
 			
 			galderaBat=new Galdera(galdera, eranPosible1, eranPosible2, eranPosible3, eranPosible4, eranEgokia);
-			zerrenda.add(galderaBat);
+			pZerrenda.add(galderaBat);
 		}
 		sc.close();	
 		
