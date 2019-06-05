@@ -16,7 +16,7 @@ public class Trivial {
 	}
 	private void partidaBatJolastu() {
 		this.erreseteatu();
-		//Salbuespen 2 jokalari minimo.
+		//Salbuespen 2 jokalri minimo.
 		try{
 		this.partidaHasieratu();
 			ListaJokalariak.getNireListaJokalariak().jokalarienTxandaKudeatu();

@@ -66,7 +66,7 @@ public void galderakKonfiguratu(){
 			int egungoBalioa = 0;
 			Galdera galderaBat = null;
 			boolean erantzuna= false;
-			
+			int galderaKop;
 			
 					
 			switch (pKolorea) {
@@ -77,8 +77,8 @@ public void galderakKonfiguratu(){
 				//Listaren tamaina 0 bada fitxategia berriz hasieratuko dugu.
 				
 				zenbakiRandomak=new Random();
-				int galderaKopBerde = this.listaBerde.size(); 
-			    egungoBalioa=zenbakiRandomak.nextInt(galderaKopBerde - 1);			    
+				galderaKop = this.listaBerde.size(); 
+			    egungoBalioa=zenbakiRandomak.nextInt(galderaKop - 1);			    
 			    galderaBat = this.listaBerde.get(egungoBalioa);
 			    erantzuna =  galderaBat.erantzunZuzena();
 			    this.listaBerde.remove(egungoBalioa);
@@ -93,8 +93,8 @@ public void galderakKonfiguratu(){
 			case "gorria":
 				
 				zenbakiRandomak=new Random();
-				int galderaKopGorri = this.listaGorri.size(); 
-			    egungoBalioa=zenbakiRandomak.nextInt(galderaKopGorri - 1);
+				galderaKop = this.listaGorri.size(); 
+			    egungoBalioa=zenbakiRandomak.nextInt(galderaKop - 1);
 			    galderaBat = this.listaGorri.get(egungoBalioa);
 			    erantzuna =  galderaBat.erantzunZuzena();
 			    this.listaGorri.remove(egungoBalioa);
@@ -109,8 +109,8 @@ public void galderakKonfiguratu(){
 			case "horia":
 				
 				zenbakiRandomak=new Random();
-				int galderaKopHori = this.listaHori.size(); 
-			    egungoBalioa=zenbakiRandomak.nextInt(galderaKopHori - 1);
+				galderaKop = this.listaHori.size(); 
+			    egungoBalioa=zenbakiRandomak.nextInt(galderaKop - 1);
 			    galderaBat = this.listaHori.get(egungoBalioa);
 			    erantzuna =  galderaBat.erantzunZuzena();
 			    this.listaHori.remove(egungoBalioa);
@@ -125,8 +125,8 @@ public void galderakKonfiguratu(){
 			case "laranja":
 				
 				zenbakiRandomak=new Random();
-				int galderaKopLaranja = this.listaLaranja.size(); 
-			    egungoBalioa=zenbakiRandomak.nextInt(galderaKopLaranja - 1);
+				galderaKop = this.listaLaranja.size(); 
+			    egungoBalioa=zenbakiRandomak.nextInt(galderaKop - 1);
 			    galderaBat = this.listaLaranja.get(egungoBalioa);
 			    erantzuna =  galderaBat.erantzunZuzena();
 			    this.listaLaranja.remove(egungoBalioa);
@@ -141,8 +141,8 @@ public void galderakKonfiguratu(){
 			case "morea":
 				
 				zenbakiRandomak=new Random();
-				int galderaKopMore = this.listaMore.size();
-			    egungoBalioa=zenbakiRandomak.nextInt(galderaKopMore - 1);
+				galderaKop = this.listaMore.size();
+			    egungoBalioa=zenbakiRandomak.nextInt(galderaKop - 1);
 			    galderaBat = this.listaMore.get(egungoBalioa);
 			    erantzuna =  galderaBat.erantzunZuzena();
 			    this.listaMore.remove(egungoBalioa);
@@ -157,8 +157,8 @@ public void galderakKonfiguratu(){
 			case "urdina":
 				
 				zenbakiRandomak=new Random();
-				int galderaKopUrdin = this.listaUrdi.size(); 
-			    egungoBalioa=zenbakiRandomak.nextInt(galderaKopUrdin - 1);
+				galderaKop = this.listaUrdi.size(); 
+			    egungoBalioa=zenbakiRandomak.nextInt(galderaKop - 1);
 			    galderaBat = this.listaUrdi.get(egungoBalioa);
 			    erantzuna =  galderaBat.erantzunZuzena();
 			    this.listaUrdi.remove(egungoBalioa);
@@ -173,7 +173,7 @@ public void galderakKonfiguratu(){
 			case "zuria":
 				
 				zenbakiRandomak=new Random();
-				int galderaKop = this.listaBerezi.size(); 
+				galderaKop = this.listaBerezi.size(); 
 			    egungoBalioa=zenbakiRandomak.nextInt(galderaKop - 1);
 			    galderaBat = this.listaBerezi.get(egungoBalioa);
 			    erantzuna =  galderaBat.erantzunZuzena();
