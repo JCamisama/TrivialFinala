@@ -61,6 +61,7 @@ public void galderakKonfiguratu(){
 
 	public boolean galderakFormulatu(String pKolorea){
 			
+		//Galdera ateratzeko aldagai lokalak
 			Random zenbakiRandomak=null;
 			int egungoBalioa = 0;
 			Galdera galderaBat = null;
@@ -70,11 +71,14 @@ public void galderakKonfiguratu(){
 					
 			switch (pKolorea) {
 			
-			case "berdea":				
+			case "berdea":		
+				
+				//Listak duen galdera kopuruen arteko balio bat aterako dugu(gure kasuan 0-19 artekoa).
+				//Listaren tamaina 0 bada fitxategia berriz hasieratuko dugu.
 				
 				zenbakiRandomak=new Random();
-				int galderaKop = this.listaBerde.size(); 
-			    egungoBalioa=zenbakiRandomak.nextInt(galderaKop - 1);			    
+				int galderaKopBerde = this.listaBerde.size(); 
+			    egungoBalioa=zenbakiRandomak.nextInt(galderaKopBerde - 1);			    
 			    galderaBat = this.listaBerde.get(egungoBalioa);
 			    erantzuna =  galderaBat.erantzunZuzena();
 			    this.listaBerde.remove(egungoBalioa);
@@ -89,7 +93,8 @@ public void galderakKonfiguratu(){
 			case "gorria":
 				
 				zenbakiRandomak=new Random();
-			    egungoBalioa=zenbakiRandomak.nextInt(19);
+				int galderaKopGorri = this.listaGorri.size(); 
+			    egungoBalioa=zenbakiRandomak.nextInt(galderaKopGorri - 1);
 			    galderaBat = this.listaGorri.get(egungoBalioa);
 			    erantzuna =  galderaBat.erantzunZuzena();
 			    this.listaGorri.remove(egungoBalioa);
@@ -104,7 +109,8 @@ public void galderakKonfiguratu(){
 			case "horia":
 				
 				zenbakiRandomak=new Random();
-			    egungoBalioa=zenbakiRandomak.nextInt(19);
+				int galderaKopHori = this.listaHori.size(); 
+			    egungoBalioa=zenbakiRandomak.nextInt(galderaKopHori - 1);
 			    galderaBat = this.listaHori.get(egungoBalioa);
 			    erantzuna =  galderaBat.erantzunZuzena();
 			    this.listaHori.remove(egungoBalioa);
@@ -119,7 +125,8 @@ public void galderakKonfiguratu(){
 			case "laranja":
 				
 				zenbakiRandomak=new Random();
-			    egungoBalioa=zenbakiRandomak.nextInt(19);
+				int galderaKopLaranja = this.listaLaranja.size(); 
+			    egungoBalioa=zenbakiRandomak.nextInt(galderaKopLaranja - 1);
 			    galderaBat = this.listaLaranja.get(egungoBalioa);
 			    erantzuna =  galderaBat.erantzunZuzena();
 			    this.listaLaranja.remove(egungoBalioa);
@@ -134,7 +141,8 @@ public void galderakKonfiguratu(){
 			case "morea":
 				
 				zenbakiRandomak=new Random();
-			    egungoBalioa=zenbakiRandomak.nextInt(19);
+				int galderaKopMore = this.listaMore.size();
+			    egungoBalioa=zenbakiRandomak.nextInt(galderaKopMore - 1);
 			    galderaBat = this.listaMore.get(egungoBalioa);
 			    erantzuna =  galderaBat.erantzunZuzena();
 			    this.listaMore.remove(egungoBalioa);
@@ -149,7 +157,8 @@ public void galderakKonfiguratu(){
 			case "urdina":
 				
 				zenbakiRandomak=new Random();
-			    egungoBalioa=zenbakiRandomak.nextInt(19);
+				int galderaKopUrdin = this.listaUrdi.size(); 
+			    egungoBalioa=zenbakiRandomak.nextInt(galderaKopUrdin - 1);
 			    galderaBat = this.listaUrdi.get(egungoBalioa);
 			    erantzuna =  galderaBat.erantzunZuzena();
 			    this.listaUrdi.remove(egungoBalioa);
@@ -164,7 +173,8 @@ public void galderakKonfiguratu(){
 			case "zuria":
 				
 				zenbakiRandomak=new Random();
-			    egungoBalioa=zenbakiRandomak.nextInt(19);
+				int galderaKop = this.listaBerezi.size(); 
+			    egungoBalioa=zenbakiRandomak.nextInt(galderaKop - 1);
 			    galderaBat = this.listaBerezi.get(egungoBalioa);
 			    erantzuna =  galderaBat.erantzunZuzena();
 			    this.listaBerezi.remove(egungoBalioa);
@@ -251,6 +261,8 @@ public void galderakKonfiguratu(){
 	
 	private void hasieratuLista(ArrayList<Galdera> pZerrenda, InputStream pFitx) {
 		
+		//Galderak hasieratzeko aldagai lokalak
+		
 		Galdera galderaBat=null;
 		String[] zatiak=null;		
 		InputStreamReader in=null;
@@ -267,6 +279,11 @@ public void galderakKonfiguratu(){
 		zatiak= new String[6];		
 		in= new InputStreamReader(pFitx);
 		sc = new Scanner(in);
+		
+		
+		//Galderen lista joango gara errekorritzen eta fitxategiko datuak lehen definitutako
+		//aldagaietan gordetzen, gero galdera klasearen eraikitzaileari deia egiteko.
+		
 		
 		while(sc.hasNextLine()) {
 			
