@@ -28,22 +28,21 @@ public class ListaJokalariak {
 	public void gehituJokalaria(Jokalaria pJokalaria) {
 		//Salbuespen if jokalari kop 6 edo 2
 		this.lista[this.luzera]=pJokalaria;
-		luzera++;//TODO
+		luzera++;
 
 	}
 	
 	public void jokalarienTxandaKudeatu() {
 		int txanda=-1;
 		boolean garailea=false;
-		while(!garailea){ //txanda kopuru limitatua ipini denbora badago
+		while(!garailea){
 			txanda++;
-			if (txanda==this.jokalariKop){// arrayaren indizea eta kopurua ez direlako berdinak!!!
+			if (txanda==this.jokalariKop){
 				txanda=0;
 			}
-			garailea=lista[txanda].txandaBurutu(); //boolean o int no se sabe aún
-			//TODO
+			garailea=lista[txanda].txandaBurutu(); 
 		}
-		this.partidaBukatu(lista[txanda].getFitxarenKolorea());//nick-a ipini diateke
+		this.partidaBukatu(lista[txanda].getFitxarenKolorea());
 	}
 	
 	public void partidaBukatu(String pFitxarenKolorea) {
@@ -78,7 +77,7 @@ public class ListaJokalariak {
 	}
 	
 	public void hasieratuJokalariak(){
-		//public Jokalaria(String pKolorea, int pPosizioaErrenkada, int pPosizioaZutabea, boolean pHasierakoPasilloa){
+		
 		Jokalaria jokalariBat=null;
 		String[] zatiak=new String[4];
 		InputStream fitx=null;

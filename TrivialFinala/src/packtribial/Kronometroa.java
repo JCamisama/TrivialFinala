@@ -26,9 +26,5 @@ public class Kronometroa {
 		public int pasaDirenSegunduakLortu()
 		{
 		 return (int) (System.currentTimeMillis() - zeroMomentua) / 1000;
-		}
-		
-			
-			
-			
+		}		
 }
