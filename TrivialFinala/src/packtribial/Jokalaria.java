@@ -46,10 +46,7 @@ public class Jokalaria {
 	        Teklatua.getTeklatua().skipLine( "Sakatu ENTER fitxa " + ateratakoa + " posizio mugitzeko");
 	
 	        //Tableroa klasean fitxa mugitzeko
-	        
-	        /*garaileaDa=tableroHau.fitxaMugitu(this, this.pasilloa, this.posizioaErrenkada, this.posizioaZutabea
-	        		, this.puntuak, ateratakoa);*/
-	                //ateratakoa, this.pasilloa, this.posizioaErrenkada, this.posizioaZutabea, );
+	      
 	        aldaketak=tableroHau.fitxaMugitu(this.hasierakoPasilloan, this.posizioaErrenkada, this.posizioaZutabea, 
 	        								  this.puntuak, ateratakoa);
 	        

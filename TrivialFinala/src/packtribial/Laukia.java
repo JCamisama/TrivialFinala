@@ -17,7 +17,7 @@ public class Laukia {
 	//gainontzeko metodoak-metodos adicionales
 	
 	
-	public String galderaFormulatu(){
+	public String galderaFormulatu(){ //Metodo honek galderaren erantzuna zuzena ala okerra den bueltatzen du
 		
 		String erantzuna = "okerra";
 		boolean erantzunaBoolear = false;
