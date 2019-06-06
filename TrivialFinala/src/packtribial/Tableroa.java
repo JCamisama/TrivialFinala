@@ -43,7 +43,7 @@ public class Tableroa {
 		int		egungoZutabea			= pPosizioaZutabea;
 		int		egungoErrenkada			= pPosizioaErrenkada;
 		String  erantzuna				= "okerra";					//ListaGaztatxoak honen balioa kudeatuko du
-		int		kont					= 0;
+
 		
 		
 		if(!hasierakoPasilloan){ // Zirkuluan dagoela jokalaria
@@ -234,7 +234,8 @@ public class Tableroa {
 		Scanner sc = null;
 		String kolorea=null;
 		
-		String fitxategia="Fitxategiak"+File.separator+"BarrukoTablero.txt";
+
+		String fitxategia="Fitxategiak/BarrukoTablero.txt";
 				
 		fitx = this.getClass().getClassLoader().getResourceAsStream(fitxategia);
 		in = new InputStreamReader(fitx);			
@@ -266,7 +267,7 @@ public class Tableroa {
 		}
 		sc.close();
 		kont=0;
-		fitxategia="Fitxategiak"+File.separator+"KanpokoTablero.txt";
+		fitxategia="Fitxategiak/KanpokoTablero.txt";
 		
 		fitx = this.getClass().getClassLoader().getResourceAsStream(fitxategia);
 		in = new InputStreamReader(fitx);			

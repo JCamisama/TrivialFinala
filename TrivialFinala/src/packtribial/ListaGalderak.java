@@ -200,54 +200,53 @@ public void galderakKonfiguratu(){
 		
 		ArrayList<Galdera> zerrenda = null;
 		InputStream fitx = null;
-		
 		String fitxategia=null;
 		
 		switch (pKolorea) {
 		
 			case "berdea":
-				fitxategia="Fitxategiak"+File.separator+"Galdera_berdeaBiologia.txt";
+				fitxategia="Fitxategiak/Galdera_berdeaBiologia.txt";
 				fitx = this.getClass().getClassLoader().getResourceAsStream(fitxategia);
 				zerrenda= this.listaBerde;
 				break;
 				
 			case "gorria":
 				
-				fitxategia="Fitxategiak"+File.separator+"GalderaGorriaBideo-jokoak.txt";
+				fitxategia="Fitxategiak/GalderaGorriaBideo-jokoak.txt";
 				fitx = this.getClass().getClassLoader().getResourceAsStream(fitxategia);
 				zerrenda= this.listaGorri;
 				break;
 				
 			case "laranja":
 				
-				fitxategia="Fitxategiak"+File.separator+"GalderaLaranjaentretenimendua.txt";
+				fitxategia="Fitxategiak/GalderaLaranjaentretenimendua.txt";
 				fitx = this.getClass().getClassLoader().getResourceAsStream(fitxategia);
 				zerrenda= this.listaLaranja;
 				break;
 				
 			case "horia":
 				
-				fitxategia="Fitxategiak"+File.separator+"GalderaHoriaKirolak.txt";
+				fitxategia="Fitxategiak/GalderaHoriaKirolak.txt";
 				fitx = this.getClass().getClassLoader().getResourceAsStream(fitxategia);
 				zerrenda= this.listaHori;
 				break;
 				
 			case "morea":
 				
-				fitxategia="Fitxategiak"+File.separator+"Galdera_moreaOtaku.txt";
+				fitxategia="Fitxategiak/Galdera_moreaOtaku.txt";
 				fitx = this.getClass().getClassLoader().getResourceAsStream(fitxategia);
 				zerrenda= this.listaMore;
 				break;
 				
 			case "urdina":
 				
-				fitxategia="Fitxategiak"+File.separator+"Galdera_UrdinaGeografia.txt";
+				fitxategia="Fitxategiak/Galdera_UrdinaGeografia.txt";
 				fitx = this.getClass().getClassLoader().getResourceAsStream(fitxategia);
 				zerrenda= this.listaUrdi;
 				break;		
 				
 			case "zuria":
-				fitxategia="Fitxategiak"+File.separator+"GalderaFinalak.txt";
+				fitxategia="Fitxategiak/GalderaFinalak.txt";
 				fitx = this.getClass().getClassLoader().getResourceAsStream(fitxategia);
 				zerrenda= this.listaBerezi;
 				break;

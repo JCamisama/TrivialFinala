@@ -93,7 +93,8 @@ public class ListaJokalariak {
 		boolean hasierakoPasilloan=true;
 		int kont=0;
 		
-		String fitxategia="Fitxategiak"+File.separator+"JokalariFitxategi.txt";
+		
+		String fitxategia="Fitxategiak/JokalariFitxategi.txt";
 		fitx = this.getClass().getClassLoader().getResourceAsStream(fitxategia);
 		in = new InputStreamReader(fitx);			
 		sc = new Scanner(in);
